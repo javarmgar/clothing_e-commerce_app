@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodDeliveryApp" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.FoodDeliveryApp" parent="Base.Theme.FoodDeliveryApp">
+
+
+        <!--
+            Attributes description
+                colorPrimaryDark: Used for the status bar and contextually for other elements.
+                colorSecondary: A secondary color for your app, used for secondary branding or surfaces.
+                colorSurface: The color of surfaces such as cards, sheets, menus.
+                colorBackground: The color of the app background.
+                colorError: The color used for error states and messages.
+                colorOnPrimary: The color of text and icons on primary surfaces.
+                colorOnSecondary: The color of text and icons on secondary surfaces.
+                colorOnSurface: The color of text and icons on surfaces.
+                colorOnBackground: The color of text and icons on background.
+                colorOnError: The color of text and icons on error surfaces.
+                android:windowBackground: Background color of the window.
+                android:colorBackground: The color applied to the window background.
+                android:textColorPrimary: The color of most text.
+                android:textColorSecondary: The color of secondary text.
+                android:navigationBarColor: The color of the navigation bar.
+                android:statusBarColor: The color of the status bar.
+                fontFamily: The default font family for text views.
+        -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">#303F9F</item> <!--TBD -->
+        <item name="colorAccent">#FF4081</item> <!--TBD -->
+        <item name="colorSecondary">#FFC107</item> <!--TBD -->
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="android:windowBackground">@color/color_surface</item>
+        <item name="android:textColorPrimary">@color/color_text_primary</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary</item>
+        <item name="fontFamily">@font/roboto</item>
+
+    </style>
+
+
+</resources>
