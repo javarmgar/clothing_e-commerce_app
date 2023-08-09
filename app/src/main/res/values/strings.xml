@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FoodDeliveryApp</string>
+    <string name="text_title_getting_started">Ready to make a new friend</string>
+    <string name="text_subtitle_getting_started">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</string>
+    <string name="text_btn_get_started">Get Started</string>
 </resources>

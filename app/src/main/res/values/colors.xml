@@ -8,12 +8,26 @@
     <color name="color_error">@color/red_1</color>
     <color name="color_on_secondary">#848484</color>
     <color name="color_on_surface">#000000</color>
+
     <color name="color_text_primary">#212121</color>
     <color name="color_text_secondary">#727272</color>
 
+    <color name="color_text_primary_inverted">@color/white</color>
+    <color name="color_text_secondary_inverted">@color/white</color>
+
+    <!-- Colors for buttons -->
+    <color name="color_btn_not_pressed">#FFFFFF</color>
+    <color name="color_btn_stroke_not_pressed">#000000</color>
+
+    <color name="color_btn_text_primary">#7C4B35</color>
+
+
+    <!-- Color Literals -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red_1">#E73427</color>
     <color name="color_orange_1">#EC943E</color>
     <color name="color_orange_2">#CA7622</color>
+
+
 </resources>
