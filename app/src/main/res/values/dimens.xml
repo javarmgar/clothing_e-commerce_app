@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Guideline convention names
+        name: <nameViewComponent>_<PurposeViewComponent>_<dimension>
+            where:
+                <nameViewComponent> -> less than 7 characters e.g. Button: btn, Layout: layout
+
+                <PurposeViewComponent> -> Specific Feature Component e.g. corner radius of a button -> corner_radius
+                
+                <dimension> -> define size from the next options _0dp: 0dp, _10dp:10dp, or layout_corner_radius_s: 5dp
+    -->
+    <!--Margin dimens -->
+
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_33dp">33dp</dimen>
+    <dimen name="margin_29dp">29dp</dimen>
+    <dimen name="margin_37dp">37dp</dimen>
+    <dimen name="margin_47dp">47dp</dimen>
+    <dimen name="margin_61dp">61dp</dimen>
+    <dimen name="margin_79dp">79dp</dimen>
+
+
+    <!--General dimens -->
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_44dp">44dp</dimen>
+    <dimen name="_88dp">88dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color_background_images" />
+            <size
+                android:height="@dimen/_24dp"
+                android:width="@dimen/_24dp"/>
+        </shape>
+   </item>
+    <item
+        android:drawable="@drawable/img_dog_getting_started"
+        android:gravity="center"
+        />
+</layer-list>
