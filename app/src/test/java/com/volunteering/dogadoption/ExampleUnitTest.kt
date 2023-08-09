@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp
+package com.volunteering.dogadoption
 
 import org.junit.Test
 

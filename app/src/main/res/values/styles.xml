@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--
+        Guidelines for fonts
+
+        h_<textSize>_<fontFamily>_<textStyle>_<gravity>
+            <textSize>    -> {23,16,14,12,}
+            <fontFamily>  -> {sb,m,r,}               -> {semibold, medium, regular}
+            <textStyle>   -> {n,i,b}                 -> {normal, italic, bold}
+            <gravity>     -> {c,l,r,}                -> {center,left,right}
+
+        -->
+
+    <!--Text Colors-->
+    <style name="color_0">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--Text styles-->
+
+    <style name="color_0.h_23_sb_n_l_10em">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:ems">10</item>
+    </style>
+
+
+    <!-- Buttons styles -->
+    <style name="st_btn" />
+
+
+
+    <!--
+    Guidelines for icons
+
+    ic_<familySize>_<otherAttr>
+        <familySize>  -> {xxs, xs, s, m, l, xl, xxl, xxxl}  :which is defined size
+        <otherAttr>   -> {}                                 :still to be defined
+
+    -->
+
+    <style name="ic_xs">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth">@dimen/ic_xs</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+
+</resources>

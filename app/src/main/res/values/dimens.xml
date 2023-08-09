@@ -30,6 +30,15 @@
     <dimen name="margin_61dp">61dp</dimen>
     <dimen name="margin_79dp">79dp</dimen>
 
+    <!--Icon dimens -->
+
+    <dimen name="ic_xs">16.2dp</dimen>
+
+    <!--Component's elevation -->
+    <dimen name="elevation_4">4dp</dimen>
+    <dimen name="elevation_8">8dp</dimen>
+    <dimen name="elevation_2">2dp</dimen>
+    <dimen name="elevation_10">10dp</dimen>
 
     <!--General dimens -->
     <dimen name="_0dp">0dp</dimen>
