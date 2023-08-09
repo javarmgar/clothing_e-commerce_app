@@ -1,3 +1,11 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.aar
+*.apk.debug
+*.aab.debug
+
 # Gradle files
 .gradle/
 build/
@@ -8,12 +16,26 @@ local.properties
 # Log/OS Files
 *.log
 
+# macOS specific files
+.DS_Store
+
 # Android Studio generated files and folders
 captures/
 .externalNativeBuild/
 .cxx/
 *.apk
 output.json
+
+# Compiled JNI code and libraries
+**/build/intermediates/
+**/build/generated/
+
+# Crashlytics generated files
+com_crashlytics_export_strings.xml
+
+
+# ProGuard files
+proguard-rules.pro
 
 # IntelliJ
 *.iml
@@ -31,3 +53,9 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Lint results
+/lint-results-*.xml
+
+# CMake build files
+CMakeLists.txt
