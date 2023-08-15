@@ -3,4 +3,18 @@
     <string name="text_title_getting_started">Ready to make a new friend</string>
     <string name="text_subtitle_getting_started">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</string>
     <string name="text_btn_get_started">Get Started</string>
+    <string name="place_holder_text_animal_title">Rocky</string>
+    <string name="text_animal_title" />
+    <string name="place_holder_text_animal_price">$100.00</string>
+    <string name="text_animal_price" />
+    <string name="place_holder_text_animal_location_distance">2km</string>
+    <string name="text_animal_location_distance" />
+    <string name="place_holder_text_location_country_city">Zurich, CH</string>
+    <string name="text_location_country_city" />
+    <string name="text_searcher_title">Find your new pet</string>
+    <string name="search_hint">Search</string>
+    <string name="text_categories_title">Categories</string>
+    <string name="text_animal_category_title" />
+    <string name="place_holder_text_animal_category_title">Dogs</string>
+
 </resources>

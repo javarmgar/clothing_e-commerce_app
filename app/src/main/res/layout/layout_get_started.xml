@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/tv_title_getting_started"
-        style="@style/color_1.h_28_m_b_c"
+        style="@style/h_28_m_b_c_opi"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_22dp"
@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/tv_subtitle_getting_started"
-        style="@style/color_1.h_13_r_n_c.18em"
+        style="@style/h_13_r_n_c_opi.18em"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_16dp"
@@ -56,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/color_2.h_16_b_b_c"
+            style="@style/h_16_b_b_c_tp"
             android:text="@string/text_btn_get_started"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +64,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
