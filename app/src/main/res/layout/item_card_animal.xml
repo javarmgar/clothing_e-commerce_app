@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_width="147dp"
+    tools:layout_height="180dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_card_full"
+    android:layout_marginStart="@dimen/_16dp"
+    android:layout_marginEnd="@dimen/_0dp"
+    android:layout_marginBottom="@dimen/_16dp"
+    android:layout_marginTop="@dimen/_0dp"
+    android:elevation="@dimen/_15dp">
+
+    <ImageView
+        android:id="@+id/iv_animal_block"
+        android:src="@drawable/img_dog_mock_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.87"
+        app:layout_constraintDimensionRatio="128:106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        />
+
+    <TextView
+        android:id="@+id/tv_animal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/h_15_m_n_l_bl"
+        tools:text="@string/place_holder_text_animal_title"
+        android:text="@string/text_animal_title"
+        app:layout_constraintStart_toStartOf="@id/iv_animal_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_animal_block"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/iv_animal_price"
+        style="@style/.h_12_r_b_l_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/place_holder_text_animal_price"
+        android:text="@string/text_animal_price"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/iv_animal_block"
+        app:layout_constraintTop_toBottomOf="@id/tv_animal_title"
+        />
+
+    <ImageView
+        android:id="@+id/iv_animal_location_distance"
+        android:src="@drawable/ic_map_pin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_animal_price"
+        app:layout_constraintBottom_toBottomOf="@id/iv_animal_price"
+        app:layout_constraintHorizontal_bias="0.7"
+        />
+
+    <TextView
+        android:id="@+id/tv_animal_location_distance"
+        style="@style/h_12_r_b_l_g1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        tools:text="@string/place_holder_text_animal_location_distance"
+        android:text="@string/text_animal_location_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/iv_animal_location_distance"
+        app:layout_constraintTop_toTopOf="@id/iv_animal_location_distance"
+        app:layout_constraintBottom_toBottomOf="@id/iv_animal_location_distance"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

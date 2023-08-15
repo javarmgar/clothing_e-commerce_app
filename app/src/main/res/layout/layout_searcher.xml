@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_layout"
+    android:paddingBottom="@dimen/_16dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_animal_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/h_20_b_b_l_onp"
+        android:text="@string/text_searcher_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:background="@drawable/background_card_full"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_header_btn_nav_drawer"
+        app:layout_constraintTop_toBottomOf="@id/tv_animal_category_title"
+        />
+
+    <ImageView
+        android:id="@+id/iv_header_btn_nav_drawer"
+        android:layout_width="@dimen/ic_btn_40_dp"
+        android:layout_height="@dimen/ic_btn_40_dp"
+        android:src="@drawable/ic_btn_search_settings"
+        app:layout_constraintStart_toEndOf="@id/search_view"
+        app:layout_constraintTop_toTopOf="@id/search_view"
+        app:layout_constraintBottom_toBottomOf="@id/search_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

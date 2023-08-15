@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_background_images">#F9C28D</color>
+    <color name="color_background_layout">@color/color_white_1</color>
+
+    <color name="color_primary">#EC9126</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_on_primary">#0F0F2D</color>
+    <color name="color_error">@color/red_1</color>
+    <color name="color_on_secondary">#848484</color>
+    <color name="color_on_surface">#000000</color>
+
+    <color name="color_text_primary">#212121</color>
+    <color name="color_text_secondary">#727272</color>
+
+    <color name="color_text_primary_inverted">@color/white</color>
+    <color name="color_text_secondary_inverted">@color/white</color>
+    <color name="color_text_location">#061737</color>
+
+
+    <!-- Colors for buttons -->
+    <color name="color_btn_not_pressed">#FFFFFF</color>
+    <color name="color_btn_stroke_not_pressed">#000000</color>
+    <color name="color_btn_text_primary">#7C4B35</color>
+
+    <!-- Colors for cards -->
+
+    <color name="color_card_checked">@color/color_purple_light</color>
+    <color name="color_card_ic_checked">@color/color_purple_light</color>
+
+    <color name="color_card_not_checked">@color/color_white_1</color>
+    <color name="color_card_ic_not_checked">@color/color_gray_2</color>
+
+    <color name="color_text_card_checked">@color/white</color>
+    <color name="color_text_card_not_checked">@color/black</color>
+
+
+    <!-- Color Literals -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_1">#E73427</color>
+    <color name="color_orange_1">#EC943E</color>
+    <color name="color_orange_2">#CA7622</color>
+    <color name="color_gray_1">#555555</color>
+    <color name="color_gray_2">#B8B2B2</color>
+    <color name="color_purple_light">#AD5FF6</color>
+    <color name="color_purple_dark">#8B53D2</color>
+    <color name="color_white_1">#E5E5E5</color>
+
+
+</resources>

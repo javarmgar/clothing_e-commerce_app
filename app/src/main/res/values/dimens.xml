@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Guideline convention names
+        name: <nameViewComponent>_<PurposeViewComponent>_<dimension>
+            where:
+                <nameViewComponent> -> less than 7 characters e.g. Button: btn, Layout: layout
+
+                <PurposeViewComponent> -> Specific Feature Component e.g. corner radius of a button -> corner_radius
+                
+                <dimension> -> define size from the next options _0dp: 0dp, _10dp:10dp, or layout_corner_radius_s: 5dp
+    -->
+
+    <dimen name="layout_corner_radius_s">5dp</dimen>
+    <dimen name="layout_corner_radius_m">10dp</dimen>
+    <dimen name="layout_corner_radius_l">14dp</dimen>
+
+    <!--Margin dimens -->
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_33dp">33dp</dimen>
+    <dimen name="margin_29dp">29dp</dimen>
+    <dimen name="margin_37dp">37dp</dimen>
+    <dimen name="margin_47dp">47dp</dimen>
+    <dimen name="margin_61dp">61dp</dimen>
+    <dimen name="margin_79dp">79dp</dimen>
+
+
+    <!--Margin dimens -->
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_14dp">14dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_18dp">18dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_22dp">22dp</dimen>
+    <dimen name="padding_24dp">24dp</dimen>
+    <dimen name="padding_33dp">33dp</dimen>
+    <dimen name="padding_29dp">29dp</dimen>
+    <dimen name="padding_37dp">37dp</dimen>
+    <dimen name="padding_47dp">47dp</dimen>
+    <dimen name="padding_61dp">61dp</dimen>
+    <dimen name="padding_79dp">79dp</dimen>
+
+    <!--Corner radius -->
+    <dimen name="btn_corner_radius">10dp</dimen>
+
+    <!--Button dimens -->
+    <dimen name="btn_stroke_1dp">1dp</dimen>
+
+    <!--Icon dimens -->
+
+    <dimen name="ic_xs">16.2dp</dimen>
+
+    <!--Component's elevation -->
+    <dimen name="elevation_2">2dp</dimen>
+    <dimen name="elevation_4">4dp</dimen>
+    <dimen name="elevation_6">6dp</dimen>
+    <dimen name="elevation_8">8dp</dimen>
+    <dimen name="elevation_10">10dp</dimen>
+
+    <!--Component's icon dimen -->
+    <dimen name="ic_btn_40_dp">40dp</dimen>
+    <dimen name="ic_btn_20_dp">20dp</dimen>
+
+
+    <!--General dimens -->
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_44dp">44dp</dimen>
+    <dimen name="_88dp">88dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+
+
+</resources>
