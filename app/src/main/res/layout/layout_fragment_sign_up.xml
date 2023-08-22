@@ -7,7 +7,7 @@
     android:background="@drawable/background_gradient_orange">
 
     <TextView
-        android:id="@+id/tv_title_sign_up"
+        android:id="@+id/tv_title_confirmation"
         style="@style/h_28_m_b_c_opi"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -30,7 +30,7 @@
         android:text="@string/text_full_name_title"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_up"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_confirmation"
         app:layout_constraintWidth="wrap_content" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -184,7 +184,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_sign_up"
+        android:id="@+id/btn_accept"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/ic_btn_not_pressed_radius"

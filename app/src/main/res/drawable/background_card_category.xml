@@ -10,7 +10,7 @@
             <solid
                 android:color="@color/color_sel_item_card_category"/>
             <stroke
-                android:color="@color/black"
+                android:color="@color/color_black"
                 android:width="0.1dp" />
         </shape>
     </item>

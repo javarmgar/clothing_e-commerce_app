@@ -35,5 +35,18 @@
     <string name="text_confirm_password_title">Confirm password</string>
     <string name="text_btn_sign_up">REGISTER</string>
     <string name="text_already_have_account_title">Already have an account?</string>
+    <string name="text_title_sign_up">Sign Up</string>
+    <string name="text_subtitle_sign_up" />
+    <string name="place_holder_text_subtitle_sign_up">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco</string>
+    <string name="text_title_success">Success</string>
+    <string name="text_title_error">Error</string>
+    <string name="text_btn_success">Continue</string>
+    <string name="text_btn_error">Try again</string>
+    <string name="text_title_warning">Warning</string>
+    <string name="text_btn_warning">Accept</string>
+    <string name="text_btn_accept">Accept</string>
+    <string name="text_btn_cancel">Cancel</string>
+    <string name="place_holder_text_title_confirmation">Question place_holder?</string>
+    <string name="text_title_confirmation" />
 
 </resources>

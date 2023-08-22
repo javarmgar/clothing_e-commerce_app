@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle"
+            >
+            <solid
+                android:color="@color/color_btn_not_pressed" />
+            <corners
+                android:topRightRadius="@dimen/btn_corner_radius_15_dp"
+                android:topLeftRadius="@dimen/btn_corner_radius_15_dp"
+                android:bottomRightRadius="@dimen/btn_corner_radius_15_dp"
+                android:bottomLeftRadius="@dimen/btn_corner_radius_15_dp" />
+        </shape>
+    </item>
+</layer-list>
