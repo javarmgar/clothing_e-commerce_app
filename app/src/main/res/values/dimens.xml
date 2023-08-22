@@ -54,7 +54,9 @@
     <dimen name="padding_79dp">79dp</dimen>
 
     <!--Corner radius -->
+    <dimen name="btn_corner_radius_9_dp">9dp</dimen>
     <dimen name="btn_corner_radius_10_dp">10dp</dimen>
+    <dimen name="btn_corner_radius_15_dp">15dp</dimen>
     <dimen name="btn_corner_radius_20_dp">20dp</dimen>
 
     <!--Button dimens -->
