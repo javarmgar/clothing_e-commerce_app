@@ -10,7 +10,7 @@
     >
 
     <TextView
-        android:id="@+id/tv_animal_category_title"
+        android:id="@+id/tv_clothe_category_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/h_20_b_b_l_onp"
@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/_16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/iv_header_btn_nav_drawer"
-        app:layout_constraintTop_toBottomOf="@id/tv_animal_category_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_clothe_category_title"
         />
 
     <ImageView

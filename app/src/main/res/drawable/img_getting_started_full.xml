@@ -10,7 +10,7 @@
         </shape>
    </item>
     <item
-        android:drawable="@drawable/img_dog_getting_started"
+        android:drawable="@drawable/img_clothing_getting_started"
         android:gravity="center"
         />
 </layer-list>

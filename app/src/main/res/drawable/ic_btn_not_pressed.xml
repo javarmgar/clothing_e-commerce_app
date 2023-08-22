@@ -8,10 +8,10 @@
                 android:width="@dimen/btn_stroke_1dp"
                 android:color="@color/color_btn_stroke_not_pressed" />
             <corners
-                android:topRightRadius="@dimen/btn_corner_radius"
-                android:topLeftRadius="@dimen/btn_corner_radius"
-                android:bottomRightRadius="@dimen/btn_corner_radius"
-                android:bottomLeftRadius="@dimen/btn_corner_radius" />
+                android:topRightRadius="@dimen/btn_corner_radius_10_dp"
+                android:topLeftRadius="@dimen/btn_corner_radius_10_dp"
+                android:bottomRightRadius="@dimen/btn_corner_radius_10_dp"
+                android:bottomLeftRadius="@dimen/btn_corner_radius_10_dp" />
         </shape>
     </item>
 </layer-list>

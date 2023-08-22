@@ -1,20 +1,32 @@
 <resources>
-    <string name="app_name">FoodDeliveryApp</string>
-    <string name="text_title_getting_started">Ready to make a new friend</string>
+    <string name="app_name">Clothing E-commerce app</string>
+    <string name="text_title_getting_started">Do you want to buy used clother in cheaper price</string>
     <string name="text_subtitle_getting_started">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</string>
     <string name="text_btn_get_started">Get Started</string>
-    <string name="place_holder_text_animal_title">Rocky</string>
-    <string name="text_animal_title" />
-    <string name="place_holder_text_animal_price">$100.00</string>
-    <string name="text_animal_price" />
-    <string name="place_holder_text_animal_location_distance">2km</string>
-    <string name="text_animal_location_distance" />
+    <string name="place_holder_text_clothe_title">T-Shirt</string>
+    <string name="text_clothe_title" />
+    <string name="place_holder_text_clothe_price">$100.00</string>
+    <string name="text_clothe_price" />
+    <string name="place_holder_text_clothe_location_distance">2km</string>
+    <string name="text_clothe_location_distance" />
     <string name="place_holder_text_location_country_city">Zurich, CH</string>
     <string name="text_location_country_city" />
-    <string name="text_searcher_title">Find your new pet</string>
+    <string name="text_searcher_title">Clothes around your area</string>
     <string name="search_hint">Search</string>
     <string name="text_categories_title">Categories</string>
-    <string name="text_animal_category_title" />
-    <string name="place_holder_text_animal_category_title">Dogs</string>
+    <string name="text_clothe_category_title" />
+    <string name="place_holder_text_clothe_category_title">Tops</string>
+    <string name="text_sign_in_title">Sign in</string>
+    <string name="text_email_title">Email</string>
+    <string name="text_til_email">Email</string>
+    <string name="text_til_pass">password</string>
+    <string name="text_password_title">Password\t</string>
+    <string name="text_message_forgot_password">Forgot password?</string>
+    <string name="text_remember_me_title">Remember me</string>
+    <string name="text_btn_log_in">LOGIN</string>
+    <string name="text_or_title">-OR-</string>
+    <string name="text_sign_with_sm_title">Sign in with</string>
+    <string name="text_missing_account_title">Don’t have an Account?</string>
+    <string name="text_sign_up_title">Sign up</string>
 
 </resources>

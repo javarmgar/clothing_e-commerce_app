@@ -36,6 +36,11 @@
     <color name="color_text_card_not_checked">@color/black</color>
 
 
+    <!-- Colors for Text Fields - EditTexts -->
+
+    <color name="color_til_container">@color/color_white_1</color>
+
+
     <!-- Color Literals -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
@@ -47,6 +52,6 @@
     <color name="color_purple_light">#AD5FF6</color>
     <color name="color_purple_dark">#8B53D2</color>
     <color name="color_white_1">#E5E5E5</color>
-
+    <color name="color_white_2">#F5F5F5</color>
 
 </resources>
