@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.FoodDeliveryApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ClothingApp" parent="Theme.Material3.DayNight.NoActionBar">
 
     </style>
 
-    <style name="Theme.FoodDeliveryApp" parent="Base.Theme.FoodDeliveryApp">
+    <style name="Theme.ClothingApp" parent="Base.Theme.ClothingApp">
 
 
         <!--

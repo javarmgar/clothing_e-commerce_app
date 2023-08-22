@@ -9,7 +9,7 @@
     android:paddingVertical="@dimen/_16dp">
 
     <ImageView
-        android:id="@+id/iv_animal_category"
+        android:id="@+id/iv_clothe_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/background_card_category"
@@ -21,16 +21,16 @@
         />
 
     <TextView
-        android:id="@+id/tv_animal_category_title"
+        android:id="@+id/tv_clothe_category_title"
         style="@style/h_12_os_m_n_l_p"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_animal_category_title"
-        tools:text="@string/place_holder_text_animal_category_title"
-        app:layout_constraintBottom_toBottomOf="@id/iv_animal_category"
-        app:layout_constraintEnd_toEndOf="@id/iv_animal_category"
-        app:layout_constraintStart_toStartOf="@id/iv_animal_category"
-        app:layout_constraintTop_toTopOf="@id/iv_animal_category"
+        android:text="@string/text_clothe_category_title"
+        tools:text="@string/place_holder_text_clothe_category_title"
+        app:layout_constraintBottom_toBottomOf="@id/iv_clothe_category"
+        app:layout_constraintEnd_toEndOf="@id/iv_clothe_category"
+        app:layout_constraintStart_toStartOf="@id/iv_clothe_category"
+        app:layout_constraintTop_toTopOf="@id/iv_clothe_category"
         app:layout_constraintHorizontal_bias="0.8"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

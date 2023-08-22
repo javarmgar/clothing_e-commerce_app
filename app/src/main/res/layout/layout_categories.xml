@@ -9,7 +9,7 @@
     android:paddingBottom="@dimen/_16dp">
 
     <TextView
-        android:id="@+id/tv_animal_category_title"
+        android:id="@+id/tv_clothe_category_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/h_20_b_b_l_onp"
@@ -19,14 +19,14 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_animals_categories"
+        android:id="@+id/rv_clothes_categories"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginVertical="@dimen/margin_16dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_animal_category_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_clothe_category_title"
         tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_card_category"
         tools:itemCount="8"

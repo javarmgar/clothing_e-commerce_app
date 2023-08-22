@@ -1,4 +1,4 @@
-package com.volunteering.dogadoption
+package com.volunteering.clothingapp
 
 import org.junit.Test
 

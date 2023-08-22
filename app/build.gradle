@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.volunteering.dogadoption'
+    namespace 'com.volunteering.clothingapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.volunteering.dogadoption"
+        applicationId "com.volunteering.clothingapp"
         minSdk 26
         targetSdk 33
         versionCode 1
