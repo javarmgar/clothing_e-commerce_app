@@ -28,5 +28,12 @@
     <string name="text_sign_with_sm_title">Sign in with</string>
     <string name="text_missing_account_title">Don’t have an Account?</string>
     <string name="text_sign_up_title">Sign up</string>
+    <string name="text_full_name_title">Full name</string>
+    <string name="text_full_name">Full name</string>
+    <string name="text_phone_number_title">Phone number</string>
+    <string name="text_til_phone_number">Phone number</string>
+    <string name="text_confirm_password_title">Confirm password</string>
+    <string name="text_btn_sign_up">REGISTER</string>
+    <string name="text_already_have_account_title">Already have an account?</string>
 
 </resources>

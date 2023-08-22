@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/tv_title_sign_in"
+        android:id="@+id/tv_title_sign_up"
         style="@style/h_28_m_b_c_opi"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -23,7 +23,7 @@
         />
 
     <TextView
-        android:id="@+id/tv_email_title"
+        android:id="@+id/tv_full_name_title"
         style="@style/h_13_r_n_l_opi"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -33,13 +33,13 @@
         app:layout_constraintWidth="wrap_content"
         app:layout_constraintVertical_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_email"
+        android:id="@+id/til_full_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -50,7 +50,7 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_email_title">
+        app:layout_constraintTop_toBottomOf="@id/tv_full_name_title">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -71,12 +71,12 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:text="@string/text_password_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_email"
+        app:layout_constraintTop_toBottomOf="@id/til_full_name"
         />
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_password"
+        android:id="@+id/til_phone_number"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/margin_16dp"
@@ -104,9 +104,9 @@
         app:layout_constraintWidth="wrap_content"
         android:text="@string/text_message_forgot_password"
         android:layout_marginVertical="@dimen/margin_8dp"
-        app:layout_constraintEnd_toEndOf="@+id/til_password"
+        app:layout_constraintEnd_toEndOf="@+id/til_phone_number"
         app:layout_constraintHeight="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:layout_constraintTop_toBottomOf="@+id/til_phone_number"
         />
 
     <CheckBox
@@ -120,7 +120,7 @@
         android:layout_marginVertical="@dimen/margin_16dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_password"
+        app:layout_constraintTop_toBottomOf="@id/til_phone_number"
         />
 
     <TextView
@@ -138,7 +138,7 @@
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_log_in"
+        android:id="@+id/btn_sign_up"
         android:layout_height="0dp"
         android:layout_width="0dp"
         app:layout_constraintWidth_percent="0.8"
@@ -172,7 +172,7 @@
         app:layout_constraintHeight="wrap_content"
         android:text="@string/text_or_title"
         android:layout_marginVertical="@dimen/margin_16dp"
-        app:layout_constraintTop_toBottomOf="@id/btn_log_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />

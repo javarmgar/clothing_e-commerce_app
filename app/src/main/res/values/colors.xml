@@ -38,7 +38,7 @@
 
     <!-- Colors for Text Fields - EditTexts -->
 
-    <color name="color_til_container">@color/color_white_1</color>
+    <color name="color_til_container">@color/color_white_2</color>
 
 
     <!-- Color Literals -->
