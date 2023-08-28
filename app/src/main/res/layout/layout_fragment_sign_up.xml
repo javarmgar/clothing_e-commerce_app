@@ -17,7 +17,7 @@
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintWidth="wrap_content" />
 
     <TextView
@@ -41,6 +41,7 @@
         android:layout_marginTop="@dimen/margin_16dp"
         android:hint="@string/text_full_name"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +74,7 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_til_phone_number"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,6 +108,7 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_email_title"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,6 +141,7 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_password_title"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_key"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,6 +174,7 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_confirm_password_title"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_key"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

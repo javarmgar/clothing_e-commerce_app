@@ -70,7 +70,7 @@
         app:layout_constraintStart_toStartOf="@id/dg_modal_background"
         app:layout_constraintEnd_toStartOf="@id/btn_accept"
         app:layout_constraintHorizontal_chainStyle="packed"
-        android:layout_marginEnd="@dimen/8dp"
+        android:layout_marginEnd="@dimen/_8dp"
 
         >
         <TextView

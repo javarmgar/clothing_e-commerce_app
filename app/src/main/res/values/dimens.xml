@@ -93,14 +93,17 @@
     <dimen name="_30dp">30dp</dimen>
     <dimen name="_40dp">40dp</dimen>
     <dimen name="_44dp">44dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
     <dimen name="_50dp">50dp</dimen>
     <dimen name="_60dp">60dp</dimen>
     <dimen name="_70dp">70dp</dimen>
     <dimen name="_80dp">80dp</dimen>
+    <dimen name="_86dp">86dp</dimen>
     <dimen name="_88dp">88dp</dimen>
     <dimen name="_100dp">100dp</dimen>
     <dimen name="_120dp">120dp</dimen>
 
+    <!--Fonts dimens -->
     <dimen name="_16sp">16sp</dimen>
 
 </resources>
