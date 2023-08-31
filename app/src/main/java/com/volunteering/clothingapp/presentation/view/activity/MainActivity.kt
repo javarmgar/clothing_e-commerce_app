@@ -15,8 +15,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.clothingapp.core.data.remote.model.HiringResponseModel
 import com.clothingapp.core.data.remote.model.params.HiringParamsModel
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.framework.library.utils.Resource
 import com.volunteering.clothingapp.framework.library.utils.Status
@@ -24,7 +22,7 @@ import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
 import com.volunteering.clothingapp.databinding.ActivityMainBinding
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
-import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheet
+import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheetAddress
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -35,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     private val LOG_TAG: String = "LT_MainActivity"
 
-    private val bottomSheet =  ModalBottomSheet()
+    private val bottomSheet =  ModalBottomSheetAddress()
     val filterByName = { item: HiringResponseModel -> item.name != "null" && item.name != "" }
 
     val filterNone = { _: HiringResponseModel -> true }
@@ -71,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setModalBottomSheet() {
         binding.btnBottomSheetDialog.setOnClickListener {
-            bottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
+            bottomSheet.show(supportFragmentManager, ModalBottomSheetAddress.TAG)
 
         }
     }

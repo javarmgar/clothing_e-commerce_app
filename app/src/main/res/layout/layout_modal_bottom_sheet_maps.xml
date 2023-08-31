@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/tv_title_google_maps"
+            style="@style/h_20_r_b_c_primary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_22dp"
+            android:text="@string/text_title_google_maps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth="match_parent" />
+
+        <!-- TODO  replace an image view to hold the google maps layout -->
+        <ImageView
+            android:id="@+id/dg_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:src="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_google_maps" />
+
+        <ImageView
+            android:id="@+id/iv_details_location_map"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/background_card_full_degraded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.32"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_label_city"
+            style="@style/h_16_r_b_l_pr_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:text="@string/text_label_city"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88"
+            app:layout_constraintWidth="wrap_content"
+            tools:text="@string/place_holder_text_label_city" />
+
+        <TextView
+            android:id="@+id/tv_label_country"
+            style="@style/h_14_r_r_c_op"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/text_label_country"
+            app:layout_constraintHeight="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_label_city"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_city"
+            app:layout_constraintWidth="wrap_content"
+            tools:text="@string/place_holder_text_label_country" />
+
+        <include
+            android:id="@+id/layout_btn_find_me"
+            layout="@layout/layout_btn_find_me"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="4:1"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_label_city"
+            app:layout_constraintBottom_toBottomOf="@id/tv_label_country"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_set_location_map"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_btn_not_pressed_primary"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_country"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="100:15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8">
+
+            <TextView
+                style="@style/h_16_b_b_c_tp"
+                android:textColor="@color/color_btn_text_primary_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btn_set_location_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

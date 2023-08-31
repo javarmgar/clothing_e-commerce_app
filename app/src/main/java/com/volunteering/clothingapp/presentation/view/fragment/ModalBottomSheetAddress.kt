@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +14,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.volunteering.clothingapp.R
 
 
-class ModalBottomSheet : BottomSheetDialogFragment() {
+class ModalBottomSheetAddress : BottomSheetDialogFragment() {
 
 
     private val LOG_TAG: String = "LT_ModalBottomSheet"
@@ -46,7 +45,7 @@ class ModalBottomSheet : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(LOG_TAG,"onCreateView() -> ")
-        return inflater.inflate(R.layout.modal_bottom_sheet_address, container, false)
+        return inflater.inflate(R.layout.layout_modal_bottom_sheet_address, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

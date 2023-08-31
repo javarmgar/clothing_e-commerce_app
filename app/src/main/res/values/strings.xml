@@ -76,5 +76,12 @@
     <string name="text_delivery_address">Type in the delivery address</string>
     <string name="text_label_address_location" />
     <string name="place_holder_text_label_address_location">Current location</string>
+    <string name="text_title_google_maps">Address confirmation</string>
+    <string name="text_label_city" />
+    <string name="place_holder_text_label_city">Ciudad de Mexico</string>
+    <string name="text_label_country" />
+    <string name="place_holder_text_label_country">Mexico</string>
+    <string name="text_label_find_me">Find me</string>
+    <string name="text_btn_set_location_map">Set location</string>
 
 </resources>
