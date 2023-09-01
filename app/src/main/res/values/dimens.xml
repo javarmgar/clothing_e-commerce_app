@@ -75,6 +75,7 @@
 
     <!--Component's icon dimen -->
     <dimen name="ic_btn_40_dp">40dp</dimen>
+    <dimen name="ic_btn_42_dp">42dp</dimen>
     <dimen name="ic_btn_20_dp">20dp</dimen>
 
 

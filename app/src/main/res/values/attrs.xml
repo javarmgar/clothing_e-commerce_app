@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Custom Styles     -->
+
+    <declare-styleable name="ItemStatusView">
+        <attr name="status" format="enum">
+            <enum name="available" value="0" />
+            <enum name="sold" value="1" />
+            <enum name="inactive" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

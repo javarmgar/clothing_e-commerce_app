@@ -60,6 +60,15 @@
         <item name="android:textColor">@color/color_on_primary</item>
     </style>
 
+    <style name="h_14_r_r_l_secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+
     <style name="h_16_r_b_l_wh_1">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
@@ -96,7 +105,6 @@
         <item name="android:textColor">@color/color_on_primary</item>
     </style>
 
-
     <style name="h_24_r_b_c_primary">
         <item name="android:textSize">24sp</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
@@ -104,6 +112,17 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:ems">5</item>
+    </style>
+
+    <style name="h_24_r_b_l_primary">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:ems">5</item>
     </style>
 
     <style name="h_28_m_b_c_opi">

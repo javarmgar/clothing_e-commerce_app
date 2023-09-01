@@ -21,6 +21,7 @@ import com.volunteering.clothingapp.framework.library.utils.Status
 import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
 import com.volunteering.clothingapp.databinding.ActivityMainBinding
+import com.volunteering.clothingapp.presentation.base.ItemStatusView
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
 import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheetAddress
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
@@ -59,7 +60,18 @@ class MainActivity : AppCompatActivity() {
         Log.d(LOG_TAG, "onCreate() ")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val itemStatusViewImpl: ItemStatusView = binding.itemStatusViewImpl
 
+        itemStatusViewImpl.setOnClickListener {
+            ItemStatusView.apply {
+                itemStatusViewImpl.state = when(itemStatusViewImpl.state){
+                    AVAILABLE -> SOLD
+                    SOLD ->  INACTIVE
+                    INACTIVE -> AVAILABLE
+                    else -> AVAILABLE
+                }
+            }
+        }
         setSortingFieldSpinner()
         setFilterByNameSpinner()
         setRecyclerView()

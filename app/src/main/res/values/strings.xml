@@ -83,5 +83,11 @@
     <string name="place_holder_text_label_country">Mexico</string>
     <string name="text_label_find_me">Find me</string>
     <string name="text_btn_set_location_map">Set location</string>
+    <string name="text_title_details_title" />
+    <string name="place_holder_text_title_details_title">Name</string>
+    <string name="text_status_available">Available</string>
+    <string name="text_status_sold">Sold</string>
+    <string name="text_status_inactive">Inactive</string>
+
 
 </resources>
