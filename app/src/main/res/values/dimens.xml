@@ -74,9 +74,11 @@
     <dimen name="elevation_10">10dp</dimen>
 
     <!--Component's icon dimen -->
-    <dimen name="ic_btn_40_dp">40dp</dimen>
-    <dimen name="ic_btn_42_dp">42dp</dimen>
     <dimen name="ic_btn_20_dp">20dp</dimen>
+    <dimen name="ic_btn_24_dp">24dp</dimen>
+    <dimen name="ic_btn_30_dp">30dp</dimen>
+    <dimen name="ic_btn_42_dp">42dp</dimen>
+    <dimen name="ic_btn_40_dp">40dp</dimen>
 
 
     <!--General dimens -->

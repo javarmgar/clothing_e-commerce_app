@@ -7,18 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/item_card_cloth_details"
-        layout="@layout/item_card_cloth_details"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="34:24"
-        android:layout_marginHorizontal="@dimen/margin_16dp"
-        android:layout_marginTop="@dimen/margin_16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/item_status_view_impl"
-        />
+<!--    <include-->
+<!--        android:id="@+id/item_card_cloth_details"-->
+<!--        layout="@layout/item_card_cloth_details"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintDimensionRatio="34:24"-->
+<!--        android:layout_marginHorizontal="@dimen/margin_16dp"-->
+<!--        android:layout_marginTop="@dimen/margin_16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/item_status_view_impl"-->
+<!--        />-->
 
     <TextView
         android:id="@+id/tv_details_title"
@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth="wrap_content"
         app:layout_constraintHeight="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/item_card_cloth_details"
+        app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView

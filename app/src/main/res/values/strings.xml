@@ -119,6 +119,21 @@
     <string name="text_details_title_seller">SELLER</string>
     <string name="place_holder_text_seller_name">John williams</string>
     <string name="text_view_full_profile">View Profile</string>
+    <string name="text_title_screen">Cart</string>
+    <string name="text_title_subtotal">Subtotal</string>
+    <string name="text_title_discount">Discount</string>
+    <string name="text_title_shipping">Shipping</string>
+    <string name="text_title_total">Total</string>
+    <string name="text_title_subtotal_value" />
+    <string name="place_holder_text_title_subtotal_value">$100.00</string>
+    <string name="text_title_discount_value" />
+    <string name="place_holder_text_title_discount_value">5%</string>
+    <string name="text_title_shipping_value" />
+    <string name="place_holder_text_title_shipping_value">$15.00</string>
+    <string name="text_title_total_value" />
+    <string name="place_holder_text_title_total_value">$110.00</string>
+    <string name="text_btn_go_back">Go back</string>
+    <string name="text_btn_checkout">Checkout</string>
 
 
 </resources>
