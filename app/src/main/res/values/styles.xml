@@ -69,6 +69,15 @@ w
         <item name="android:textColor">@color/color_sel_text_card_category</item>
     </style>
 
+    <style name="h_12_os_m_n_l_gray" parent="h_12_os_m_n_l_p">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_sel_text_card_category</item>
+    </style>
+
     <style name="h_12_os_b_b_l_s">
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/open_sans_bold</item>
@@ -127,7 +136,7 @@ w
     </style>
 
     <style name="h_12_n_l_g1">
-        <item name="android:textSize">13sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textStyle">normal</item>
@@ -136,6 +145,14 @@ w
         <item name="android:textColor">@color/color_gray_1</item>
     </style>
 
+    <style name="h_12_n_l_g1_no_ems">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_gray_1</item>
+    </style>
 
     <style name="h_13_r_n_c_opi">
         <item name="android:textSize">13sp</item>
@@ -377,6 +394,16 @@ w
         <item name="android:textColor">@color/color_on_primary</item>
         <item name="android:ems">4</item>
     </style>
+
+    <style name="h_24_r_b_l_primary_no_ems">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
 
     <style name="h_28_m_b_c_opi">
         <item name="android:textSize">28sp</item>

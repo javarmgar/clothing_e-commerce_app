@@ -134,6 +134,21 @@
     <string name="place_holder_text_title_total_value">$110.00</string>
     <string name="text_btn_go_back">Go back</string>
     <string name="text_btn_checkout">Checkout</string>
+    <string name="text_title_screen_shipping_address">Select shipping address</string>
+    <string name="text_btn_proceed_payment">Proceed to payment</string>
+    <string name="place_holder_tv_address_name">Mike Roberto</string>
+    <string name="tv_address_name" />
+    <string name="text_address_detailed" />
+    <string name="place_holder_text_address_detailed">Rosecrans Ave, Suite 200 El Segundo, USA</string>
+    <string name="text_address_phone_number" />
+    <string name="place_holder_text_address_phone_number">(+501) 425 906 4618</string>
+    <string name="text_address_zip_code">Zip code:</string>
+    <string name="text_address_zip_code_value" />
+    <string name="place_holder_text_address_zip_code_value">92053</string>
+    <string name="text_address_notes">Notes:</string>
+    <string name="text_address_notes_value" />
+    <string name="place_holder_text_address_notes_value">Call when arriving</string>
+    <string name="text_btn_add_new_address">Add new address</string>
 
 
 </resources>
