@@ -55,34 +55,18 @@
         app:layout_constraintTop_toBottomOf="@id/tv_clothe_title"
         />
 
-    <ImageView
-        android:id="@+id/iv_clothe_location_distance"
-        android:src="@drawable/ic_map_pin"
+    <include
+        layout="@layout/layout_item_distance"
+        android:id="@+id/layout_item_distance"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintWidth="40dp"
+        app:layout_constraintHeight="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/iv_clothe_price"
         app:layout_constraintBottom_toBottomOf="@id/iv_clothe_price"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.9"
         />
 
-    <TextView
-        android:id="@+id/tv_clothe_location_distance"
-        style="@style/h_12_r_b_l_g1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
-        tools:text="@string/place_holder_text_clothe_location_distance"
-        android:text="@string/text_clothe_location_distance"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/iv_clothe_location_distance"
-        app:layout_constraintTop_toTopOf="@id/iv_clothe_location_distance"
-        app:layout_constraintBottom_toBottomOf="@id/iv_clothe_location_distance"
-
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>

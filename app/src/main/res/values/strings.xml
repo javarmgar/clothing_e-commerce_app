@@ -88,6 +88,37 @@
     <string name="text_status_available">Available</string>
     <string name="text_status_sold">Sold</string>
     <string name="text_status_inactive">Inactive</string>
+    <string name="place_holder_text_total_title">$200.00</string>
+    <string name="place_holder_text_tv_details_subtitle">T-shirt from Zara</string>
+    <string name="text_tv_details_subtitle" />
+    <string name="text_details_title_condition">Condition</string>
+    <string name="text_details_value_condition_value" />
+    <string name="place_holder_text_details_value_condition_value">Fair</string>
+    <string name="place_holder_text_details_title_condition">Condition</string>
+    <string name="text_details_title_size">Size</string>
+    <string name="text_details_value_size" />
+    <string name="place_holder_text_details_value_size">XS</string>
+    <string name="text_details_title_brand">Brand</string>
+    <string name="text_details_value_brand" />
+    <string name="place_holder_text_details_value_brand">Zara</string>
+    <string name="text_details_title_material">Material</string>
+    <string name="text_details_value_material" />
+    <string name="place_holder_text_details_value_material">Cotton</string>
+    <string name="place_holder_text_details_value_color">Pink</string>
+    <string name="text_details_value_color" />
+    <string name="text_details_title_color">Color</string>
+    <string name="text_details_title_location">Location</string>
+    <string name="text_details_value_location" />
+    <string name="place_holder_text_details_value_location">Kastanienallee, Berlin</string>
+    <string name="text_details_title_date_listed">Date listed</string>
+    <string name="text_details_value_date_listed" />
+    <string name="place_holder_text_details_value_date_listed">03/03/2023</string>
+    <string name="text_details_title_description">Description</string>
+    <string name="text_details_value_description" />
+    <string name="place_holder_text_details_value_description">"Gnocchi is lovely and well trained dog. She loves to pull a little bit when she sees other dogs. "</string>
+    <string name="text_details_title_seller">SELLER</string>
+    <string name="place_holder_text_seller_name">John williams</string>
+    <string name="text_view_full_profile">View Profile</string>
 
 
 </resources>
