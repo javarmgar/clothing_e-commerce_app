@@ -149,6 +149,24 @@
     <string name="text_address_notes_value" />
     <string name="place_holder_text_address_notes_value">Call when arriving</string>
     <string name="text_btn_add_new_address">Add new address</string>
+    <string name="text_title_screen_create_shipping_address">Create address</string>
+    <string name="text_btn_add_address">Add address</string>
+    <string name="text_name_title">Full name</string>
+    <string name="text_phone_title">Phone</string>
+    <string name="text_street_address_title">Street address</string>
+    <string name="text_city_title">City</string>
+    <string name="text_state_title">State</string>
+    <string name="text_zip_code_title">Zip code</string>
+    <string name="text_title_screen_filters">Filters</string>
+    <string name="text_title_clear_all">Clear all</string>
+    <string name="text_title_price_range">Price range:</string>
+    <string name="text_title_categories">Categories:</string>
+    <string name="text_title_condition">Condition:</string>
+    <string name="text_title_gender">Gender:</string>
+    <string name="text_title_distance">Distance:</string>
+    <string name="text_title_delivery">Delivery:</string>
+    <string name="text_title_sort_by">Sort by:</string>
+    <string name="text_title_size">Size</string>
 
 
 </resources>

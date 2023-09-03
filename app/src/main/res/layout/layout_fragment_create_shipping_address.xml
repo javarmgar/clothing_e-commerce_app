@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_layout">
+
+    <TextView
+        android:id="@+id/tv_title_screen_create_shipping_address"
+        style="@style/h_24_r_b_l_primary_no_ems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_screen_create_shipping_address"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_name_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_create_shipping_address"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_name"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_name"
+        app:layout_constraintStart_toStartOf="@id/til_name"
+        app:layout_constraintTop_toBottomOf="@id/til_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_phone_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_name"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_phone"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_phone"
+        app:layout_constraintStart_toStartOf="@id/til_phone"
+        app:layout_constraintTop_toBottomOf="@id/til_phone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_street_address"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_street_address_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_phone"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_street_address"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_street_address"
+        app:layout_constraintStart_toStartOf="@id/til_street_address"
+        app:layout_constraintTop_toBottomOf="@id/til_street_address" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_city"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_city_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_street_address"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_city"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_city"
+        app:layout_constraintStart_toStartOf="@id/til_city"
+        app:layout_constraintTop_toBottomOf="@id/til_city" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_state_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_city"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_state"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_state"
+        app:layout_constraintStart_toStartOf="@id/til_state"
+        app:layout_constraintTop_toBottomOf="@id/til_state" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_zip_code"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:hint="@string/text_zip_code_title"
+        app:boxBackgroundColor="@color/color_background_layout"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom_state"
+        app:layout_constraintWidth="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_til_container" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider_bottom_zip_code"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/til_zip_code"
+        app:layout_constraintStart_toStartOf="@id/til_zip_code"
+        app:layout_constraintTop_toBottomOf="@id/til_zip_code" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:background="@drawable/ic_btn_not_pressed_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="133:48"
+        app:layout_constraintEnd_toStartOf="@id/btn_add_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_percent="0.35">
+
+        <TextView
+            style="@style/h_16_b_b_c_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btn_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_add_address"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:background="@drawable/ic_btn_not_pressed_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="179:48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_cancel"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_percent="0.47">
+
+        <ImageView
+            android:id="@+id/iv_btn_add_address"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/img_circle_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/tv_btn_add_address"
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_btn_add_address"
+            style="@style/h_16_b_b_c_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:text="@string/text_btn_add_address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_btn_add_address"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
