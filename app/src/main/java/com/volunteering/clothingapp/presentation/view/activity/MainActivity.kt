@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
@@ -74,24 +73,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setChipGroup() {
-        val chipArrayId = mutableListOf<Int>()
+        //0 create list that helps with the chain view's ids required for <androidx.constraintlayout.helper.widget.Flow attr
+        val chipArrayIds = mutableListOf<Int>()
         resources.getStringArray(R.array.array_categories).forEach {
-            Log.d(LOG_TAG, "setChipGroup() -> $it")
+            //1.- inflate view
             val inflater = LayoutInflater.from(this)
             val chipCustomView = inflater.inflate(R.layout.layout_item_chip, binding.layoutChipItems.root, false) as ChipCustomView
-
+            //2.- set view attributes
             chipCustomView.text = it
             chipCustomView.id = View.generateViewId() // Generate a unique ID for the view
-            chipArrayId.add(chipCustomView.id )
-            chipCustomView.layoutParams = ConstraintLayout.LayoutParams(
-                ConstraintLayout.LayoutParams.WRAP_CONTENT,
-                100
-            )
-
+            //3.- set constraints - omitted cause xml layout_item_chip contains constraint attrs
+            //4.- add the view to the view group
             binding.layoutChipItems.root.addView(chipCustomView)
+            //5.- add the
+            chipArrayIds.add(chipCustomView.id )
 
         }
-        binding.layoutChipItems.flowChipOptions.referencedIds = chipArrayId.toIntArray()
+        //6.- Add  chain id's  array to androidx.constraintlayout.helper.widget.Flow attr
+        binding.layoutChipItems.flowChipOptions.referencedIds = chipArrayIds.toIntArray()
 
     }
 

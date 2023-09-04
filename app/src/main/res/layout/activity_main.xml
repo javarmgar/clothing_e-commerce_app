@@ -18,17 +18,6 @@
         custom:status="available"
         />
 
-    <com.volunteering.clothingapp.presentation.base.ChipCustomView
-        android:id="@+id/chip_custom_view_impl"
-        android:layout_width="107dp"
-        android:layout_height="25dp"
-        app:layout_constraintStart_toEndOf="@id/item_status_view_impl"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="@dimen/_16dp"
-        custom:state="true"
-        custom:text="TEST"
-        />
-
     <include
         android:id="@+id/layout_filter_price_range"
         layout="@layout/layout_filter_price_range"
@@ -41,9 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <include
-        android:id="@+id/layout_chip_items"
-        layout="@layout/layout_chip_items"
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginVertical="@dimen/margin_16dp"
@@ -51,8 +38,15 @@
         app:layout_constraintTop_toBottomOf="@id/layout_filter_price_range"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guideline_1"
-        />
+        app:layout_constraintBottom_toTopOf="@id/guideline_1">
+
+        <include
+            android:id="@+id/layout_chip_items"
+            layout="@layout/layout_chip_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_1"

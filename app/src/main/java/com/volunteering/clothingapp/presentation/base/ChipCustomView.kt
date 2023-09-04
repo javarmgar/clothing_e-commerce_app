@@ -23,14 +23,14 @@ class ChipCustomView @JvmOverloads constructor(
         get() = _state
         set(value) {
             _state = value
-            updateUIBasedOnState(value)
+            updateUI()
         }
 
     var text: String
         get() = _text
         set(value) {
             _text = value
-            updateText(value)
+            updateUI()
         }
 
 
@@ -39,27 +39,20 @@ class ChipCustomView @JvmOverloads constructor(
         LayoutInflater.from(context).inflate(R.layout.layout_item_chip_internal, this, true)
         checkedTextView = findViewById(R.id.tv_title_chip)
         checkBox = findViewById(R.id.iv_view_background)
-
-
         context.obtainStyledAttributes(attrs, R.styleable.ChipCustomView).apply {
             _state = getBoolean(R.styleable.ChipCustomView_state, false)
             _text = getString(R.styleable.ChipCustomView_text) ?: "default"
             recycle()
         }
-        updateUIBasedOnState(_state)
-        updateText(_text)
+        updateUI()
     }
 
-    private fun updateUIBasedOnState(state: Boolean) {
-        checkedTextView.isChecked = state
-        checkBox.isChecked = state
+    private fun updateUI() {
+        checkedTextView.isChecked = _state
+        checkBox.isChecked = _state
+        checkedTextView.text = _text
         invalidate()
         requestLayout()
     }
 
-    private fun updateText(text: String) {
-        checkedTextView.text = text
-        invalidate()
-        requestLayout()
-    }
 }
