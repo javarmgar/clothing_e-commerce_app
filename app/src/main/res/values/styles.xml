@@ -145,6 +145,15 @@ w
         <item name="android:textColor">@color/color_gray_1</item>
     </style>
 
+    <style name="h_12_n_l_sel_chip">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_sel_text_chip</item>
+    </style>
+
     <style name="h_12_n_l_g1_no_ems">
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/roboto</item>
@@ -218,6 +227,15 @@ w
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+
+    <style name="h_14_os_sb_b_l_s">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_text_secondary</item>
@@ -336,7 +354,7 @@ w
         <item name="fontFamily">@font/open_sans_semibold</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
-        <item name="android:textColor">@color/color_purple_light</item>
+        <item name="android:textColor">@color/color_purple_light_1</item>
     </style>
 
     <style name="h_18_r_n_l_p">
@@ -354,7 +372,7 @@ w
         <item name="fontFamily">@font/nunito_sans</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/color_purple_light</item>
+        <item name="android:textColor">@color/color_purple_light_1</item>
     </style>
 
     <style name="h_20_b_b_l_onp">

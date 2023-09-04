@@ -1,14 +1,16 @@
 package com.volunteering.clothingapp.presentation.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
@@ -16,18 +18,19 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.clothingapp.core.data.remote.model.HiringResponseModel
 import com.clothingapp.core.data.remote.model.params.HiringParamsModel
 import com.volunteering.clothingapp.R
+import com.volunteering.clothingapp.databinding.ActivityMainBinding
 import com.volunteering.clothingapp.framework.library.utils.Resource
 import com.volunteering.clothingapp.framework.library.utils.Status
 import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
-import com.volunteering.clothingapp.databinding.ActivityMainBinding
+import com.volunteering.clothingapp.presentation.base.ChipCustomView
 import com.volunteering.clothingapp.presentation.base.ItemStatusView
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
 import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheetAddress
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import java.util.Comparator
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -60,23 +63,51 @@ class MainActivity : AppCompatActivity() {
         Log.d(LOG_TAG, "onCreate() ")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val itemStatusViewImpl: ItemStatusView = binding.itemStatusViewImpl
 
-        itemStatusViewImpl.setOnClickListener {
-            ItemStatusView.apply {
-                itemStatusViewImpl.state = when(itemStatusViewImpl.state){
-                    AVAILABLE -> SOLD
-                    SOLD ->  INACTIVE
-                    INACTIVE -> AVAILABLE
-                    else -> AVAILABLE
-                }
-            }
-        }
+        setChipGroup()
+        setCustomStatus()
         setSortingFieldSpinner()
         setFilterByNameSpinner()
         setRecyclerView()
         setModalBottomSheet()
 
+    }
+
+    private fun setChipGroup() {
+        val chipArrayId = mutableListOf<Int>()
+        resources.getStringArray(R.array.array_categories).forEach {
+            Log.d(LOG_TAG, "setChipGroup() -> $it")
+            val inflater = LayoutInflater.from(this)
+            val chipCustomView = inflater.inflate(R.layout.layout_item_chip, binding.layoutChipItems.root, false) as ChipCustomView
+
+            chipCustomView.text = it
+            chipCustomView.id = View.generateViewId() // Generate a unique ID for the view
+            chipArrayId.add(chipCustomView.id )
+            chipCustomView.layoutParams = ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.WRAP_CONTENT,
+                100
+            )
+
+            binding.layoutChipItems.root.addView(chipCustomView)
+
+        }
+        binding.layoutChipItems.flowChipOptions.referencedIds = chipArrayId.toIntArray()
+
+    }
+
+    private fun setCustomStatus() {
+        binding.itemStatusViewImpl.also {statusView ->
+            statusView.setOnClickListener {
+                ItemStatusView.apply {
+                    statusView.state = when(statusView.state){
+                        AVAILABLE -> SOLD
+                        SOLD ->  INACTIVE
+                        INACTIVE -> AVAILABLE
+                        else -> AVAILABLE
+                    }
+                }
+            }
+        }
     }
 
     private fun setModalBottomSheet() {

@@ -10,4 +10,9 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="ChipCustomView">
+        <attr name="state" format="boolean" />
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
 </resources>

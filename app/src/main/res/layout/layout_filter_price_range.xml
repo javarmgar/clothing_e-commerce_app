@@ -5,9 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_width="330dp"
-    tools:layout_height="205dp"
-    >
+    tools:layout_width="370dp"
+    tools:layout_height="230dp">
 
     <View
         android:id="@+id/divider_bottom_name"
@@ -33,6 +32,77 @@
         app:layout_constraintTop_toBottomOf="@id/divider_bottom_name"
         />
 
+    <TextView
+        android:id="@+id/tv_title_from"
+        style="@style/h_14_os_sb_b_l_s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_from"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_price_range"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_from"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:hint="@string/text_from"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorEnabled="true"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_from">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_title_to"
+        style="@style/h_14_os_sb_b_l_s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_to"
+        android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/tv_title_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_price_range"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_to"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:hint="@string/text_to"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorEnabled="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_from"
+        app:layout_constraintStart_toEndOf="@id/til_from"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <CheckBox
         android:id="@+id/iv_control_collapse"
         android:layout_width="@dimen/ic_btn_28_dp"
@@ -46,5 +116,22 @@
         app:layout_constraintTop_toTopOf="@id/tv_title_price_range"
         app:layout_constraintBottom_toBottomOf="@id/tv_title_price_range"
         />
+    
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/ranger_slider_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.0"
+        android:valueTo="5000.0"
+        app:values="@array/initial_values"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        app:labelBehavior="floating"
+        app:thumbColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_from"
+        android:layout_marginTop="@dimen/margin_16dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

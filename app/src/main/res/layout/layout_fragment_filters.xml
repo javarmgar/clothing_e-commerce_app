@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/color_background_layout">
 
-
     <TextView
         android:id="@+id/tv_title_screen_filters"
         style="@style/h_24_r_b_l_primary_no_ems"

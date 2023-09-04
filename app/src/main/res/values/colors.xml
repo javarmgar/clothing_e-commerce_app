@@ -22,8 +22,8 @@
 
     <!-- Colors for cards -->
 
-    <color name="color_card_checked">@color/color_purple_light</color>
-    <color name="color_card_ic_checked">@color/color_purple_light</color>
+    <color name="color_card_checked">@color/color_purple_light_1</color>
+    <color name="color_card_ic_checked">@color/color_purple_light_1</color>
 
     <color name="color_card_not_checked">@color/color_white_1</color>
     <color name="color_card_ic_not_checked">@color/color_gray_2</color>
@@ -73,9 +73,11 @@
     <color name="color_orange_5">#EC9126</color>
     <color name="color_gray_1">#555555</color>
     <color name="color_gray_2">#B8B2B2</color>
-    <color name="color_purple_light">#AD5FF6</color>
+    <color name="color_gray_3">#E4E4E4</color>
+    <color name="color_purple_light_1">#AD5FF6</color>
+    <color name="color_purple_light_2">#E5C9FF</color>
     <color name="color_purple_dark">#8B53D2</color>
-    <color name="color_white_1">#E5E5E5</color>
+    <color name="color_white_1">#F1F0F0</color>
     <color name="color_white_2">#F5F5F5</color>
     <color name="color_yellow_1">#EDB95E</color>
     <color name="color_green_1">#5CB85C</color>
