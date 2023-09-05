@@ -161,6 +161,12 @@
     <string name="text_to">To</string>
     <string name="text_title_chip" />
     <string name="place_holder_text_title_chip">1 - wellworn</string>
+    <string name="text_radio_s">S</string>
+    <string name="text_radio_m">M</string>
+    <string name="text_radio_l">L</string>
+    <string name="text_radio_xl">XL</string>
+    <string name="text_radio_xxl">XXL</string>
+    <string name="place_holder_text_item_spinner_list">T-28</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>
@@ -178,4 +184,24 @@
         <item>bottoms</item>
         <item>activewear</item>
     </string-array>
+
+    <string-array name="array_filter_size_bottom">
+        <item>T-28</item>
+        <item>T-29</item>
+        <item>T-30</item>
+        <item>T-31</item>
+        <item>T-32</item>
+        <item>T-34</item>
+        <item>T-36</item>
+        <item>T-38</item>
+        <item>T-40</item>
+    </string-array>
+
+    <string-array name="array_condition">
+        <item>1 - wellworn</item>
+        <item>2 - Fair</item>
+        <item>3 - Good</item>
+        <item>4 - New</item>
+    </string-array>
+
 </resources>

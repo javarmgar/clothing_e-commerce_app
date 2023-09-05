@@ -47,4 +47,15 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_title_categories"
         />
 
+    <include
+        android:id="@+id/layout_chip_items"
+        layout="@layout/layout_chip_items"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_control_collapse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

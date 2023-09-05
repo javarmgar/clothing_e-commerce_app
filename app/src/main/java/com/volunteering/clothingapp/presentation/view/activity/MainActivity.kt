@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
@@ -25,6 +27,7 @@ import com.volunteering.clothingapp.framework.library.utils.setVisible
 import com.volunteering.clothingapp.presentation.base.ChipCustomView
 import com.volunteering.clothingapp.presentation.base.ItemStatusView
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
+import com.volunteering.clothingapp.presentation.view.fragment.FiltersFragment
 import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheetAddress
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -69,7 +72,19 @@ class MainActivity : AppCompatActivity() {
         setFilterByNameSpinner()
         setRecyclerView()
         setModalBottomSheet()
+        setFilterFragment(savedInstanceState)
 
+    }
+
+    private fun setFilterFragment(savedInstanceState: Bundle?) {
+        binding.btnFilterFragment.setOnClickListener{
+            if(savedInstanceState == null){
+                supportFragmentManager.commit {
+                    setReorderingAllowed(true)
+                    add<FiltersFragment>(R.id.fragment_container_view)
+                }
+            }
+        }
     }
 
     private fun setChipGroup() {

@@ -1,50 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_16dp"
+    tools:layout_width="375dp"
     tools:layout_height="205dp"
     >
 
-    <View
-        android:id="@+id/divider_top"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        android:layout_marginHorizontal="@dimen/margin_16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/tv_title_size"
-        style="@style/h_18_r_n_l_p"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/text_title_size"
-        android:layout_marginTop="@dimen/margin_16dp"
-        android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintHeight="wrap_content"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider_top"
-        />
+        >
 
-    <CheckBox
-        android:id="@+id/iv_control_collapse"
-        android:layout_width="@dimen/ic_btn_28_dp"
-        android:layout_height="@dimen/ic_btn_28_dp"
-        android:layout_marginEnd="@dimen/margin_16dp"
-        android:background="@drawable/selector_ic_collapsible"
-        android:button="@android:color/transparent"
-        android:checked="false"
-        android:elevation="@dimen/_16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_title_size"
-        app:layout_constraintBottom_toBottomOf="@id/tv_title_size"
-        />
+        <View
+            android:id="@+id/divider_top"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginHorizontal="@dimen/margin_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_title_size"
+            style="@style/h_18_r_n_l_p"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/text_title_size"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            app:layout_constraintHeight="wrap_content"
+            app:layout_constraintWidth="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_top"
+            />
+
+        <CheckBox
+            android:id="@+id/iv_control_collapse"
+            android:layout_width="@dimen/ic_btn_28_dp"
+            android:layout_height="@dimen/ic_btn_28_dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:background="@drawable/selector_ic_collapsible"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:elevation="@dimen/_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_title_size"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_size"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_size"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/margin_16dp"
+            android:layout_marginHorizontal="@dimen/margin_16dp"
+            app:layout_constraintHeight="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_size"
+            >
+
+            <!--TODO we need to define the onclick method-->
+
+            <RadioButton
+                android:id="@+id/radio_s"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_background_card_left"
+                tools:checked="false"
+                android:text="@string/text_radio_s"
+                android:textAlignment="center"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginVertical="@dimen/margin_16dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_m"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_background_card_center"
+                tools:checked="false"
+                android:text="@string/text_radio_m"
+                android:textAlignment="center"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_minus_2dp"
+                android:layout_marginVertical="@dimen/margin_16dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_l"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_background_card_center"
+                tools:checked="false"
+                android:text="@string/text_radio_l"
+                android:textAlignment="center"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_minus_2dp"
+                android:layout_marginVertical="@dimen/margin_16dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_xl"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_background_card_center"
+                android:text="@string/text_radio_xl"
+                android:textAlignment="center"
+                tools:checked="true"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_minus_2dp"
+                android:layout_marginVertical="@dimen/margin_16dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_xxl"
+                android:button="@android:color/transparent"
+                android:background="@drawable/selector_background_card_right"
+                tools:checked="true"
+                android:textAlignment="center"
+                android:text="@string/text_radio_xxl"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_minus_2dp"
+                android:layout_marginVertical="@dimen/margin_16dp"
+                />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_spinner_bottom_wear"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_title_size"
+            android:layout_marginTop="@dimen/margin_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_size"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

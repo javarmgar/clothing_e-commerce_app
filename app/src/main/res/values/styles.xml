@@ -320,7 +320,6 @@ w
         <item name="android:textColor">@color/color_white</item>
     </style>
 
-
     <style name="h_16_r_n_l_p">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -328,6 +327,15 @@ w
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_text_location</item>
+    </style>
+
+    <style name="h_16_os_r_n_l_s">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
     </style>
 
     <style name="h_16_os_sb_n_l_s">
