@@ -12,6 +12,7 @@
                 <dimension> -> define size from the next options _0dp: 0dp, _10dp:10dp, or layout_corner_radius_s: 5dp
     -->
 
+    <dimen name="layout_corner_radius_n">0dp</dimen>
     <dimen name="layout_corner_radius_s">5dp</dimen>
     <dimen name="layout_corner_radius_m">10dp</dimen>
     <dimen name="layout_corner_radius_12dp">12dp</dimen>

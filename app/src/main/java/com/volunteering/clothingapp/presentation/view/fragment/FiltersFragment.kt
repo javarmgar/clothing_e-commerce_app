@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.constraintlayout.helper.widget.Flow
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.LayoutFragmentFiltersBinding
 import com.volunteering.clothingapp.presentation.base.ChipCustomView
@@ -31,24 +33,78 @@ class FiltersFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = LayoutFragmentFiltersBinding.inflate(inflater,container,false)
         val view = binding.root
+        setPriceRangeSection()
+        setCategoriesSection()
         setSizeSection()
-        setCondition()
+        setConditionSection()
+        setGenderSection()
+        setDistanceSection()
+        setDeliverySection()
+        setSortBySection()
         return view
     }
 
-    private fun setCondition() {
+    private fun setPriceRangeSection() {
+
+    }
+
+    private fun setCategoriesSection() {
+        setChipGroupCategories()
+    }
+
+    private fun setChipGroupCategories() {
+        setChipGroup(
+            R.array.array_categories,
+            binding.layoutFilterCategories.layoutChipItems.flowChipOptions,
+            binding.layoutFilterCategories.layoutChipItems.root
+        )
+    }
+
+    private fun setSizeSection() {
+
+        val items = resources.getStringArray(R.array.array_filter_size_bottom).toList()
+        val adapter = ArrayAdapter(requireContext(), R.layout.item_spinner_list, items)
+        (binding.layoutFilterSize.spinnerTextView).setAdapter(adapter)
+
+    }
+
+    private fun setConditionSection() {
         setChipGroupCondition()
     }
 
-    private fun setChipGroupCondition() {
-        setChipGroup(R.array.array_condition)
+    private fun setGenderSection() {
+
     }
 
-    private fun setChipGroup(arrayResId: Int) {
+    private fun setDistanceSection() {
+    }
+
+    private fun setDeliverySection() {
+    }
+
+    private fun setSortBySection() {
+        setChipGroupSortBy()
+    }
+
+    private fun setChipGroupSortBy(){
+        setChipGroup(
+            R.array.array_sort_by,
+            binding.layoutFilterSortBy.layoutChipItems.flowChipOptions,
+            binding.layoutFilterSortBy.layoutChipItems.root
+        )
+    }
+
+    private fun setChipGroupCondition() {
+        setChipGroup(
+            R.array.array_condition,
+            binding.layoutFilterCondition.layoutChipItems.flowChipOptions,
+            binding.layoutFilterCondition.layoutChipItems.root
+        )
+    }
+
+    private fun setChipGroup(arrayResId: Int, flowChipOptions: Flow, parent: ConstraintLayout,) {
         //0 create list that helps with the chain view's ids required for <androidx.constraintlayout.helper.widget.Flow attr
         val chipArrayIds = mutableListOf<Int>()
-        val parent = binding.layoutFilterCondition.layoutChipItems.root
-        val chipOptionsView = binding.layoutFilterCondition.layoutChipItems.flowChipOptions
         resources.getStringArray(arrayResId).forEach {
             //1.- inflate view
             val inflater = LayoutInflater.from(requireContext())
@@ -64,15 +120,7 @@ class FiltersFragment : Fragment() {
 
         }
         //6.- Add  chain id's  array to androidx.constraintlayout.helper.widget.Flow attr
-        chipOptionsView.referencedIds = chipArrayIds.toIntArray()
-
-    }
-
-    private fun setSizeSection() {
-
-        val items = resources.getStringArray(R.array.array_filter_size_bottom).toList()
-        val adapter = ArrayAdapter(requireContext(), R.layout.item_spinner_list, items)
-        (binding.layoutFilterSize.spinnerTextView).setAdapter(adapter)
+        flowChipOptions.referencedIds = chipArrayIds.toIntArray()
 
     }
 

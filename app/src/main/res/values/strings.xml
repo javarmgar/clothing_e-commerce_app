@@ -204,4 +204,11 @@
         <item>4 - New</item>
     </string-array>
 
+    <string-array name="array_sort_by">
+        <item>Newest First</item>
+        <item>Oldest First</item>
+        <item>Price</item>
+        <item>Distance</item>
+    </string-array>
+
 </resources>

@@ -69,13 +69,22 @@ w
         <item name="android:textColor">@color/color_sel_text_card_category</item>
     </style>
 
-    <style name="h_12_os_m_n_l_gray" parent="h_12_os_m_n_l_p">
+    <style name="h_12_os_m_n_l_sel" parent="h_12_os_m_n_l_p">
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="fontFamily">@font/open_sans</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_sel_text_card_category</item>
+    </style>
+
+    <style name="h_12_os_m_n_l_gray" parent="h_12_os_m_n_l_p">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
     </style>
 
     <style name="h_12_os_b_b_l_s">

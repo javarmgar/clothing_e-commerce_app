@@ -16,7 +16,7 @@
     <color name="dialog_background_light_1">#8F000000</color>
     <color name="dialog_background_light_2">#0F1638</color>
     <color name="color_background_images">#F9C28D</color>
-    <color name="color_background_layout">@color/color_white_1</color>
+    <color name="color_background_layout">@color/color_white</color>
     <color name="color_background_primary_light_1">@color/color_orange_3</color>
 
 

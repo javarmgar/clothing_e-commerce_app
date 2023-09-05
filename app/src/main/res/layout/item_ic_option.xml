@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_width="@dimen/_60dp"
+    tools:layout_height="wrap_content"
+    android:elevation="@dimen/elevation_8"
+    android:background="@drawable/background_card_rect_full"
+    >
+
+    <!-- ImageView that covers the entire layout -->
+    <ImageView
+        android:id="@+id/iv_background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/img_square_option_delivery_local"
+        android:paddingBottom="@dimen/padding_8dp"
+        />
+
+    <!-- TextView at the bottom and centered -->
+    <TextView
+        android:id="@+id/tv_option"
+        style="@style/h_12_os_m_n_l_gray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
