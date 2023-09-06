@@ -1,4 +1,6 @@
-package com.clothingapp.core.data.base
+package com.clothingapp.core.data.remote.model
+
+import com.clothingapp.core.data.base.Model
 
 data class BankCardModel(
     val bankAccountNumber: String,
@@ -10,4 +12,5 @@ data class BankCardModel(
 enum class BankNetwork{
     MASTER_CARD,
     VISA,
+    APPLE_PAY,
 }

@@ -2,8 +2,8 @@ package com.volunteering.clothingapp.presentation.view.viewholder
 
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
-import com.clothingapp.core.data.base.BankCardModel
-import com.clothingapp.core.data.base.BankNetwork
+import com.clothingapp.core.data.remote.model.BankCardModel
+import com.clothingapp.core.data.remote.model.BankNetwork
 import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.ItemCardBankBinding
 

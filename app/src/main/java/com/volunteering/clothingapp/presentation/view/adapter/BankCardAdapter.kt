@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.clothingapp.core.data.base.BankCardModel
+import com.clothingapp.core.data.remote.model.BankCardModel
 import com.volunteering.clothingapp.databinding.ItemCardBankBinding
 import com.volunteering.clothingapp.presentation.view.viewholder.BankCardViewHolder
 

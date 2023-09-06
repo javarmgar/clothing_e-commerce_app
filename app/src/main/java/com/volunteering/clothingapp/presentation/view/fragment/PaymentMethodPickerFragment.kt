@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.clothingapp.core.data.base.BankCardModel
-import com.clothingapp.core.data.base.BankNetwork
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.clothingapp.core.data.remote.model.BankCardModel
+import com.clothingapp.core.data.remote.model.BankNetwork
+import com.clothingapp.core.data.remote.model.PaymentsModel
 import com.volunteering.clothingapp.databinding.LayoutFragmentPaymentMethodPickerBinding
 import com.volunteering.clothingapp.presentation.view.adapter.BankCardAdapter
+import com.volunteering.clothingapp.presentation.view.adapter.NewPaymentMethodAdapter
 import kotlinx.coroutines.launch
 
 class PaymentMethodPickerFragment : Fragment() {
@@ -46,6 +49,29 @@ class PaymentMethodPickerFragment : Fragment() {
         )
     )
 
+    val paymentsMockData = listOf(
+        PaymentsModel(
+            bankNetwork = BankNetwork.MASTER_CARD,
+            urlImageCardTypeNetwork = "https://example.com/mastercard.png", // replace with actual URL
+            textCardTypeNetwork = "Master Card"
+        ),
+        PaymentsModel(
+            bankNetwork = BankNetwork.VISA,
+            urlImageCardTypeNetwork = "https://example.com/visa.png", // replace with actual URL
+            textCardTypeNetwork = "Visa"
+        ),
+        PaymentsModel(
+            bankNetwork = BankNetwork.APPLE_PAY,
+            urlImageCardTypeNetwork = "https://example.com/applepay.png", // replace with actual URL
+            textCardTypeNetwork = "Apple Pay"
+        ),
+        PaymentsModel(
+            bankNetwork = BankNetwork.MASTER_CARD,
+            urlImageCardTypeNetwork = "https://example.com/mastercard.png", // replace with actual URL
+            textCardTypeNetwork = "Master Card"
+        )
+    )
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,12 +83,13 @@ class PaymentMethodPickerFragment : Fragment() {
     ): View {
         _binding = LayoutFragmentPaymentMethodPickerBinding.inflate(inflater, container, false)
         setViewPager()
+        setRecyclerView()
         return binding.root
     }
 
     private fun setViewPager() {
         val adapter = BankCardAdapter()
-        binding.viewPagerClothes.adapter = adapter
+        binding.viewPagerBankCards.adapter = adapter
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 adapter.submitList(mockData)
@@ -70,6 +97,16 @@ class PaymentMethodPickerFragment : Fragment() {
         }
     }
 
+    private fun setRecyclerView() {
+        val adapter = NewPaymentMethodAdapter()
+        binding.rvPaymentMethods.layoutManager = LinearLayoutManager(this.requireContext())
+        binding.rvPaymentMethods.adapter = adapter
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED){
+                adapter.submitList(paymentsMockData)
+            }
+        }
+    }
     companion object {
         @JvmStatic
         fun newInstance() = PaymentMethodPickerFragment()
