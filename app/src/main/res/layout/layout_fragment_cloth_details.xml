@@ -11,13 +11,14 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager_clothes"
         android:layout_width="340dp"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         android:layout_marginTop="@dimen/margin_37dp"
-        tools:background="@color/color_white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
 
+        />
     <include
         android:id="@+id/layout_rv_clothes"
         layout="@layout/layout_clothes_details"

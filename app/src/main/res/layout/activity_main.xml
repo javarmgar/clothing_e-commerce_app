@@ -287,6 +287,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_payment_method_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_filter_fragment"
+        app:layout_constraintEnd_toEndOf="@id/btn_filter_fragment"
+        />
 
 
     <androidx.fragment.app.FragmentContainerView

@@ -299,7 +299,7 @@ w
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_white</item>
     </style>
 
@@ -372,6 +372,15 @@ w
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_purple_light_1</item>
+    </style>
+
+    <style name="h_18_r_b_l_wh_1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
     <style name="h_18_r_n_l_p">

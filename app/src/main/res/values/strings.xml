@@ -169,6 +169,8 @@
     <string name="place_holder_text_item_spinner_list">T-28</string>
     <string name="text_btn_confirm_payment">Confirm Payment</string>
     <string name="text_title_screen_payment_methods">Payment methods</string>
+    <string name="place_holder_text_bank_account_number">4111 1111 1111 1111</string>
+    <string name="place_holder_text_bank_account_name">Guadalupe Javier Armenta</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>

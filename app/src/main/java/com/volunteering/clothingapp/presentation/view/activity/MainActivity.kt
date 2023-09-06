@@ -27,6 +27,7 @@ import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
 import com.volunteering.clothingapp.presentation.base.ItemStatusView
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
+import com.volunteering.clothingapp.presentation.view.fragment.PaymentMethodPickerFragment
 import com.volunteering.clothingapp.presentation.view.fragment.FiltersFragment
 import com.volunteering.clothingapp.presentation.view.fragment.ModalBottomSheetAddress
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
@@ -73,6 +74,7 @@ class MainActivity : AppCompatActivity() {
         setRecyclerView()
         setModalBottomSheet()
         setFilterFragment(savedInstanceState)
+        setPaymentMethodFragment(savedInstanceState)
 
     }
 
@@ -103,6 +105,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun setPaymentMethodFragment(savedInstanceState: Bundle?) {
+        binding.btnPaymentMethodFragment.setOnClickListener{
+            if(savedInstanceState == null){
+                supportFragmentManager.commit {
+                    setReorderingAllowed(true)
+                    add<PaymentMethodPickerFragment>(R.id.fragment_container_view)
+                }
+            }
+        }    }
+
 
     private fun setCustomStatus() {
         binding.itemStatusViewImpl.also {statusView ->
