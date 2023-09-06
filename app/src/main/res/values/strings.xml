@@ -167,6 +167,8 @@
     <string name="text_radio_xl">XL</string>
     <string name="text_radio_xxl">XXL</string>
     <string name="place_holder_text_item_spinner_list">T-28</string>
+    <string name="text_btn_confirm_payment">Confirm Payment</string>
+    <string name="text_title_screen_payment_methods">Payment methods</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>

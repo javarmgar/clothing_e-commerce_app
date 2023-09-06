@@ -2,14 +2,15 @@ package com.volunteering.clothingapp.presentation.view.activity
 
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.helper.widget.Carousel
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.lifecycle.Lifecycle
@@ -24,7 +25,6 @@ import com.volunteering.clothingapp.framework.library.utils.Resource
 import com.volunteering.clothingapp.framework.library.utils.Status
 import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
-import com.volunteering.clothingapp.presentation.base.ChipCustomView
 import com.volunteering.clothingapp.presentation.base.ItemStatusView
 import com.volunteering.clothingapp.presentation.view.adapter.HiringAdapter
 import com.volunteering.clothingapp.presentation.view.fragment.FiltersFragment
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setChipGroup()
+        setCarousel()
         setCustomStatus()
         setSortingFieldSpinner()
         setFilterByNameSpinner()
@@ -74,6 +74,23 @@ class MainActivity : AppCompatActivity() {
         setModalBottomSheet()
         setFilterFragment(savedInstanceState)
 
+    }
+
+    val list = listOf("1","2","3","4","5","6")
+    private fun setCarousel() {
+        binding.carousel.setAdapter(object : Carousel.Adapter {
+            override fun count(): Int {
+               return 3
+            }
+
+            override fun populate(view: View, index: Int) {
+                (view as TextView).text = list[index]
+            }
+
+            override fun onNewItem(index: Int) {
+                // called when an item is set
+            }
+        })
     }
 
     private fun setFilterFragment(savedInstanceState: Bundle?) {
@@ -85,28 +102,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }
-
-    private fun setChipGroup() {
-        //0 create list that helps with the chain view's ids required for <androidx.constraintlayout.helper.widget.Flow attr
-        val chipArrayIds = mutableListOf<Int>()
-        resources.getStringArray(R.array.array_categories).forEach {
-            //1.- inflate view
-            val inflater = LayoutInflater.from(this)
-            val chipCustomView = inflater.inflate(R.layout.layout_item_chip, binding.layoutChipItems.root, false) as ChipCustomView
-            //2.- set view attributes
-            chipCustomView.text = it
-            chipCustomView.id = View.generateViewId() // Generate a unique ID for the view
-            //3.- set constraints - omitted cause xml layout_item_chip contains constraint attrs
-            //4.- add the view to the view group
-            binding.layoutChipItems.root.addView(chipCustomView)
-            //5.- add the
-            chipArrayIds.add(chipCustomView.id )
-
-        }
-        //6.- Add  chain id's  array to androidx.constraintlayout.helper.widget.Flow attr
-        binding.layoutChipItems.flowChipOptions.referencedIds = chipArrayIds.toIntArray()
-
     }
 
     private fun setCustomStatus() {
