@@ -48,7 +48,6 @@
     <string name="text_btn_cancel">Cancel</string>
     <string name="place_holder_text_title_confirmation">Question place_holder?</string>
     <string name="text_title_confirmation" />
-
     <string name="text_activity_title">Fetch Exercise</string>
     <string name="text_sort_by_field">Sorting criteria: 1st by listId, 2nd by name</string>
     <string name="text_filter_by_name">Filter by:</string>
@@ -181,6 +180,16 @@
     <string name="place_holder_tv_address_detailed_2">El Segundo, USA</string>
     <string name="text_subtitle_screen_purchase_done">In delivery</string>
     <string name="text_btn_go_home">Go home</string>
+    <string name="text_title_screen_review_confirm">Review and confirm</string>
+    <string name="text_subtitle_payment_details">Payment details</string>
+    <string name="text_subtitle_address">Address</string>
+    <string name="place_holder_text_card_bank_type_network_apple_pay_selected">BBVA: **** 5793</string>
+    <string name="place_holder_text_card_bank_type_network_selected_details">Here we write the details about the TDD/TDC</string>
+    <string name="text_card_bank_type_network_apple_pay_selected" />
+    <string name="text_card_bank_type_network_selected_details" />
+    <string name="text_subtitle_seller_details">Seller details</string>
+    <string name="text_subtitle_cart_details">Cart Details</string>
+    <string name="text_btn_confirm_purchase">Confirm purchase</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>

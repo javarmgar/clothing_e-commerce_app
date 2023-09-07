@@ -11,30 +11,6 @@
     android:background="@drawable/background_card_full"
     android:elevation="@dimen/elevation_4"
     >
-<!--
-        app:layout_constraintWidth_percent="0.85"
--->
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="@dimen/_0dp"
-        android:layout_height="@dimen/_0dp"
-        android:background="@drawable/img_truck"
-        app:layout_constraintWidth_percent="0.2"
-        app:layout_constraintDimensionRatio="1:1"
-        android:elevation="@dimen/elevation_8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/guideline_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.27"
-        />
-
 
     <TextView
         android:id="@+id/tv_address_detailed_1"
@@ -46,7 +22,7 @@
         android:text="@string/tv_address_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@id/guideline_1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/place_holder_tv_address_detailed_1" />
 
