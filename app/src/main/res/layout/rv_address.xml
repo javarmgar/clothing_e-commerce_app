@@ -4,18 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_clothes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:itemCount="4"
         tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_card_address"
-        tools:itemCount="4"
         tools:orientation="vertical"
-        tools:scrollbars="vertical"
-        />
+        tools:scrollbars="vertical" />
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

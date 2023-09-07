@@ -4,9 +4,8 @@
     style="@style/h_16_os_r_n_l_s"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
     android:ellipsize="end"
     android:maxLines="1"
+    android:padding="16dp"
     android:textAppearance="?attr/textAppearanceSubtitle1"
-    tools:text="@string/place_holder_text_item_spinner_list"
-    />
+    tools:text="@string/place_holder_text_item_spinner_list" />

@@ -3,70 +3,66 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:layout_width="147dp"
-    tools:layout_height="180dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_card_full"
     android:layout_marginStart="@dimen/_16dp"
+    android:layout_marginTop="@dimen/_0dp"
     android:layout_marginEnd="@dimen/_0dp"
     android:layout_marginBottom="@dimen/_16dp"
-    android:layout_marginTop="@dimen/_0dp"
-    android:elevation="@dimen/_15dp">
+    android:background="@drawable/background_card_full"
+    android:elevation="@dimen/_15dp"
+    tools:layout_height="180dp"
+    tools:layout_width="147dp">
 
     <ImageView
         android:id="@+id/iv_clothe_block"
-        android:src="@drawable/img_clothing_mock_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth_percent="0.87"
-        app:layout_constraintDimensionRatio="128:106"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_clothing_mock_1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="128:106"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15"
-        />
+        app:layout_constraintWidth_percent="0.87" />
 
     <TextView
         android:id="@+id/tv_clothe_title"
+        style="@style/h_15_m_n_l_bl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/h_15_m_n_l_bl"
-        tools:text="@string/place_holder_text_clothe_title"
         android:text="@string/text_clothe_title"
-        app:layout_constraintStart_toStartOf="@id/iv_clothe_block"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_clothe_block"
         app:layout_constraintHorizontal_bias="0.0"
-        />
+        app:layout_constraintStart_toStartOf="@id/iv_clothe_block"
+        app:layout_constraintTop_toBottomOf="@id/iv_clothe_block"
+        tools:text="@string/place_holder_text_clothe_title" />
 
     <TextView
         android:id="@+id/iv_clothe_price"
         style="@style/h_12_r_b_l_cp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/place_holder_text_clothe_price"
-        android:text="@string/text_clothe_price"
         android:layout_marginTop="@dimen/_12dp"
+        android:text="@string/text_clothe_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/iv_clothe_block"
         app:layout_constraintTop_toBottomOf="@id/tv_clothe_title"
-        />
+        tools:text="@string/place_holder_text_clothe_price" />
 
     <include
-        layout="@layout/layout_item_distance"
         android:id="@+id/layout_item_distance"
+        layout="@layout/layout_item_distance"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth="40dp"
-        app:layout_constraintHeight="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/iv_clothe_price"
         app:layout_constraintBottom_toBottomOf="@id/iv_clothe_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="15dp"
         app:layout_constraintHorizontal_bias="0.9"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_clothe_price"
+        app:layout_constraintWidth="40dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

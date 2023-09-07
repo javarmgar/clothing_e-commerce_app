@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -41,12 +42,12 @@
         android:layout_marginTop="@dimen/margin_16dp"
         android:hint="@string/text_full_name"
         app:errorEnabled="true"
-        app:startIconDrawable="@drawable/ic_person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_full_name_title"
-        app:layout_constraintWidth="match_parent">
+        app:layout_constraintWidth="match_parent"
+        app:startIconDrawable="@drawable/ic_person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -74,12 +75,12 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_til_phone_number"
         app:errorEnabled="true"
-        app:startIconDrawable="@drawable/ic_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_phone_number_title"
-        app:layout_constraintWidth="match_parent">
+        app:layout_constraintWidth="match_parent"
+        app:startIconDrawable="@drawable/ic_phone">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -108,12 +109,12 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_email_title"
         app:errorEnabled="true"
-        app:startIconDrawable="@drawable/ic_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_email_title"
-        app:layout_constraintWidth="match_parent">
+        app:layout_constraintWidth="match_parent"
+        app:startIconDrawable="@drawable/ic_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -141,12 +142,12 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_password_title"
         app:errorEnabled="true"
-        app:startIconDrawable="@drawable/ic_key"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_password_title"
-        app:layout_constraintWidth="match_parent">
+        app:layout_constraintWidth="match_parent"
+        app:startIconDrawable="@drawable/ic_key">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -174,12 +175,12 @@
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:hint="@string/text_confirm_password_title"
         app:errorEnabled="true"
-        app:startIconDrawable="@drawable/ic_key"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_confirm_password_title"
-        app:layout_constraintWidth="match_parent">
+        app:layout_constraintWidth="match_parent"
+        app:startIconDrawable="@drawable/ic_key">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

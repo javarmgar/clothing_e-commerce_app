@@ -17,6 +17,7 @@ import com.volunteering.clothingapp.presentation.base.ChipCustomView
 class FiltersFragment : Fragment() {
 
     private val LOG_TAG: String = "LT_FiltersFragment"
+
     private var _binding: LayoutFragmentFiltersBinding? = null
     private val binding get() = _binding!!
 
@@ -30,7 +31,6 @@ class FiltersFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(LOG_TAG, "onCreateView()")
-        // Inflate the layout for this fragment
         _binding = LayoutFragmentFiltersBinding.inflate(inflater,container,false)
         val view = binding.root
         setPriceRangeSection()

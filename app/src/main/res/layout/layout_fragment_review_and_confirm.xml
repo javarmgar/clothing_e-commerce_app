@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,11 +23,11 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_review_confirm"
-        android:fillViewport="true">
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_review_confirm">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -149,33 +150,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_cart_details"
+                tools:itemCount="5"
                 tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_card_cart"
-                tools:itemCount="5"
-                tools:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_cart_details"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
+                tools:orientation="vertical" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/btn_go_back"
-                android:layout_height="0dp"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.35"
-                app:layout_constraintDimensionRatio="133:48"
-                android:elevation="@dimen/elevation_8"
-                android:background="@drawable/ic_btn_not_pressed_radius"
+                android:layout_height="0dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
-                app:layout_constraintVertical_bias="0.09"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/btn_confirm"
+                android:background="@drawable/ic_btn_not_pressed_radius"
+                android:elevation="@dimen/elevation_8"
                 app:layout_constraintBottom_toBottomOf="parent"
-                >
+                app:layout_constraintDimensionRatio="133:48"
+                app:layout_constraintEnd_toStartOf="@id/btn_confirm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintWidth_percent="0.35">
+
                 <TextView
+                    style="@style/h_16_b_b_c_tp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/h_16_b_b_c_tp"
                     android:text="@string/text_btn_go_back"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -186,21 +187,21 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/btn_confirm"
-                android:layout_height="0dp"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.47"
-                app:layout_constraintDimensionRatio="179:48"
-                android:background="@drawable/ic_btn_not_pressed_primary"
+                android:layout_height="0dp"
                 android:layout_marginBottom="@dimen/margin_16dp"
-                app:layout_constraintVertical_bias="0.09"
-                app:layout_constraintStart_toEndOf="@id/btn_go_back"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/ic_btn_not_pressed_primary"
                 app:layout_constraintBottom_toBottomOf="parent"
-                >
+                app:layout_constraintDimensionRatio="179:48"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_go_back"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintWidth_percent="0.47">
+
                 <TextView
+                    style="@style/h_16_b_b_c_wh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/h_16_b_b_c_wh"
                     android:text="@string/text_btn_confirm_purchase"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

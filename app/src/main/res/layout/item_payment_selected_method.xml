@@ -5,47 +5,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_width="335dp"
-    tools:layout_height="55dp"
     android:layout_marginHorizontal="@dimen/_16dp"
     android:layout_marginVertical="@dimen/margin_8dp"
-    >
+    tools:layout_height="55dp"
+    tools:layout_width="335dp">
 
     <ImageView
         android:id="@+id/iv_card_bank_type_network"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_visa_pay"
         android:scaleType="centerInside"
-        app:layout_constraintWidth_percent="0.2"
+        android:src="@drawable/ic_visa_pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_1"
         app:layout_constraintHeight_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/guideline_1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintWidth_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.30"
-        />
+        app:layout_constraintGuide_percent="0.30" />
 
     <TextView
         android:id="@+id/tv_card_bank_type_network_selected"
         style="@style/h_15_os_r_n_l_s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.1"
-        android:text="@string/text_card_bank_type_network_apple_pay_selected"
         android:layout_marginTop="@dimen/margin_4dp"
-        tools:text="@string/place_holder_text_card_bank_type_network_apple_pay_selected"
-        app:layout_constraintStart_toEndOf="@id/guideline_1"
+        android:text="@string/text_card_bank_type_network_apple_pay_selected"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/guideline_1"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:text="@string/place_holder_text_card_bank_type_network_apple_pay_selected" />
 
     <TextView
         android:id="@+id/tv_card_bank_type_network_selected_details"
@@ -53,21 +49,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_8dp"
-        app:layout_constraintHorizontal_bias="0"
         android:text="@string/text_card_bank_type_network_selected_details"
-        tools:text="@string/place_holder_text_card_bank_type_network_selected_details"
-        app:layout_constraintStart_toStartOf="@id/tv_card_bank_type_network_selected"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/tv_card_bank_type_network_selected"
         app:layout_constraintTop_toBottomOf="@id/tv_card_bank_type_network_selected"
-        />
+        tools:text="@string/place_holder_text_card_bank_type_network_selected_details" />
 
     <View
         android:id="@+id/divider_bottom"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

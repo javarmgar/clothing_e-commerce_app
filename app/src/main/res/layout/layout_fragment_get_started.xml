@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_gradient_orange">
 
     <ImageView
         android:id="@+id/img_background_getting_started"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/img_getting_started_full"
         android:layout_marginTop="@dimen/margin_61dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/img_getting_started_full"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHeight_percent="0.585"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_title_getting_started"
@@ -23,13 +24,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_22dp"
-        app:layout_constraintWidth="wrap_content"
         android:text="@string/text_title_getting_started"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_background_getting_started"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_subtitle_getting_started"
@@ -47,16 +47,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_get_started"
         style="@style/btn_selector.btn_relative_80_4_1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_getting_started"
         app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_getting_started">
 
         <TextView
+            style="@style/h_16_b_b_c_tp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/h_16_b_b_c_tp"
             android:text="@string/text_btn_get_started"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

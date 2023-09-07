@@ -1,6 +1,7 @@
 package com.volunteering.clothingapp.presentation.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,8 @@ import com.volunteering.clothingapp.presentation.view.adapter.NewPaymentMethodAd
 import kotlinx.coroutines.launch
 
 class PaymentMethodPickerFragment : Fragment() {
+
+    private val LOG_TAG: String = "LT_PaymentMethodPickerFragment"
 
     private  var _binding: LayoutFragmentPaymentMethodPickerBinding? = null
     private val binding get() = _binding!!
@@ -82,6 +85,7 @@ class PaymentMethodPickerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = LayoutFragmentPaymentMethodPickerBinding.inflate(inflater, container, false)
+        setChildFragments(savedInstanceState)
         setViewPager()
         setRecyclerView()
         return binding.root
@@ -107,8 +111,18 @@ class PaymentMethodPickerFragment : Fragment() {
             }
         }
     }
-    companion object {
-        @JvmStatic
-        fun newInstance() = PaymentMethodPickerFragment()
+
+    private fun setChildFragments(savedInstanceState: Bundle?) {
+
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d(LOG_TAG, "onDestroyView()")
+        _binding = null
+    }
+
+    companion object{
+        const val TAG = "PaymentMethodPickerFragment"
     }
 }

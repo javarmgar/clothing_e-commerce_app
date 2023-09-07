@@ -12,13 +12,12 @@
         android:id="@+id/iv_clothe_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8dp"
         android:src="@drawable/background_card_category"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="@dimen/_8dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_clothe_category_title"
@@ -26,11 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_clothe_category_title"
-        tools:text="@string/place_holder_text_clothe_category_title"
         app:layout_constraintBottom_toBottomOf="@id/iv_clothe_category"
         app:layout_constraintEnd_toEndOf="@id/iv_clothe_category"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="@id/iv_clothe_category"
         app:layout_constraintTop_toTopOf="@id/iv_clothe_category"
-        app:layout_constraintHorizontal_bias="0.8"/>
+        tools:text="@string/place_holder_text_clothe_category_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

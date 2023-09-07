@@ -2,11 +2,10 @@
 <com.volunteering.clothingapp.presentation.base.ChipCustomView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/chip_custom_view_impl"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_16dp"
-    custom:state="false"
-    />
+    custom:state="false" />

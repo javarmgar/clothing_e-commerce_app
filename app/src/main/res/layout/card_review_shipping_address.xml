@@ -5,12 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_width="340dp"
-    tools:layout_height="128dp"
     android:layout_margin="@dimen/margin_16dp"
     android:background="@drawable/background_card_full"
     android:elevation="@dimen/elevation_4"
-    >
+    tools:layout_height="128dp"
+    tools:layout_width="340dp">
 
     <TextView
         android:id="@+id/tv_address_detailed_1"
