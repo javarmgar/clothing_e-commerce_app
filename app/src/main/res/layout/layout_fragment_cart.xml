@@ -176,6 +176,7 @@
         android:layout_width="0dp"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintDimensionRatio="133:48"
+        android:elevation="@dimen/elevation_8"
         android:background="@drawable/ic_btn_not_pressed_radius"
         android:layout_marginBottom="@dimen/margin_16dp"
         app:layout_constraintVertical_bias="0.09"

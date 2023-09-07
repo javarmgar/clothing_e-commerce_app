@@ -34,7 +34,7 @@
         tools:layout_height="128dp">
 
         <TextView
-            android:id="@+id/tv_address_name"
+            android:id="@+id/tv_address_detailed_1"
             style="@style/h_15_rm_r_l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,14 +48,14 @@
             tools:text="@string/place_holder_tv_address_name" />
 
         <TextView
-            android:id="@+id/tv_address_detailed"
+            android:id="@+id/tv_address_detailed_2"
             style="@style/h_12_n_l_g1_no_ems"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_8dp"
             android:text="@string/text_address_detailed"
-            app:layout_constraintStart_toStartOf="@id/tv_address_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_address_name"
+            app:layout_constraintStart_toStartOf="@id/tv_address_detailed_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_detailed_1"
             tools:text="@string/place_holder_text_address_detailed" />
 
         <TextView
@@ -65,8 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_4dp"
             android:text="@string/text_address_phone_number"
-            app:layout_constraintStart_toStartOf="@id/tv_address_detailed"
-            app:layout_constraintTop_toBottomOf="@id/tv_address_detailed"
+            app:layout_constraintStart_toStartOf="@id/tv_address_detailed_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_detailed_2"
             tools:text="@string/place_holder_text_address_phone_number" />
 
         <TextView

@@ -81,6 +81,7 @@
     <color name="color_white_2">#F5F5F5</color>
     <color name="color_yellow_1">#EDB95E</color>
     <color name="color_green_1">#5CB85C</color>
+    <color name="color_green_2">#46A95C</color>
     <color name="purple_200">#FFBB86FC</color>
 
 </resources>

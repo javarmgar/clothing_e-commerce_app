@@ -101,6 +101,7 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.commit {
                     setReorderingAllowed(true)
                     add<FiltersFragment>(R.id.fragment_container_view)
+                    addToBackStack(null)
                 }
             }
         }
@@ -112,6 +113,7 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.commit {
                     setReorderingAllowed(true)
                     add<PaymentMethodPickerFragment>(R.id.fragment_container_view)
+                    addToBackStack(null)
                 }
             }
         }    }

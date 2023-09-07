@@ -7,7 +7,7 @@
     android:background="@color/color_background_layout">
 
     <TextView
-        android:id="@+id/tv_title_screen_payment_methods"
+        android:id="@+id/tv_title_screen_purchase_done"
         style="@style/h_24_r_b_l_primary_no_ems"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -27,7 +27,7 @@
         app:layout_constraintBottom_toTopOf="@id/guideline_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_payment_methods"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_purchase_done"
         app:layout_constraintWidth_percent="0.80"
         tools:itemCount="5"
         tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

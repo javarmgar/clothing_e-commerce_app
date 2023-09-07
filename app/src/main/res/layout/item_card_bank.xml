@@ -72,7 +72,7 @@
         />
 
     <CheckBox
-        android:id="@+id/cb_card_selected"
+        android:id="@+id/cb_clothe_block"
         android:layout_width="@dimen/ic_btn_24_dp"
         android:layout_height="@dimen/ic_btn_24_dp"
         android:background="@drawable/selector_img_shipping_address"

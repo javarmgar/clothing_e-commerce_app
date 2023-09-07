@@ -176,6 +176,11 @@
     <string name="text_card_bank_type_network_visa">VISA</string>
     <string name="text_card_bank_type_network_master_card">Master Card</string>
     <string name="text_card_bank_type_network_apple_pay">Apple pay</string>
+    <string name="text_title_screen_purchase_done">Purchase done</string>
+    <string name="place_holder_tv_address_detailed_1">Shipment to Rosecrans Ave, 200</string>
+    <string name="place_holder_tv_address_detailed_2">El Segundo, USA</string>
+    <string name="text_subtitle_screen_purchase_done">In delivery</string>
+    <string name="text_btn_go_home">Go home</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>
