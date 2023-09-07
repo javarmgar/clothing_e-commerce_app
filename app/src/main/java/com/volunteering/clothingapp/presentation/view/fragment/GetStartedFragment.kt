@@ -6,7 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
+import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.LayoutFragmentGetStartedBinding
+import com.volunteering.clothingapp.framework.library.utils.setVisible
 
 
 class GetStartedFragment : Fragment() {
@@ -35,7 +39,17 @@ class GetStartedFragment : Fragment() {
     }
 
     private fun setChildFragments(savedInstanceState: Bundle?) {
-
+        if (savedInstanceState == null) {
+            binding.btnGetStarted.setOnClickListener {
+                binding.fragmentContainerView.setVisible()
+                childFragmentManager.commit {
+                    add<SignInFragment>(R.id.fragment_container_view, tag = SignInFragment.TAG)
+                    setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(SignInFragment.TAG))
+                    setReorderingAllowed(true)
+                    addToBackStack(null)
+                }
+            }
+        }
     }
 
     override fun onDestroyView() {

@@ -9,11 +9,12 @@
     android:paddingBottom="@dimen/padding_16dp">
 
     <ImageView
-        android:id="@+id/iv_header_btn_nav_drawer"
+        android:id="@+id/iv_btn_filter"
         android:layout_width="@dimen/ic_btn_40_dp"
         android:layout_height="@dimen/ic_btn_40_dp"
         android:layout_margin="@dimen/margin_16dp"
-        android:src="@drawable/ic_btn_nav_drawer"
+        android:elevation="@dimen/elevation_4"
+        android:background="@drawable/ic_btn_nav_drawer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +24,11 @@
         android:layout_height="@dimen/ic_btn_20_dp"
         android:layout_margin="@dimen/margin_8dp"
         android:src="@drawable/ic_location"
-        app:layout_constraintBottom_toBottomOf="@id/iv_header_btn_nav_drawer"
+        app:layout_constraintBottom_toBottomOf="@id/iv_btn_filter"
         app:layout_constraintEnd_toStartOf="@id/tv_location_country_city"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@id/iv_header_btn_nav_drawer"
-        app:layout_constraintTop_toTopOf="@id/iv_header_btn_nav_drawer" />
+        app:layout_constraintStart_toEndOf="@id/iv_btn_filter"
+        app:layout_constraintTop_toTopOf="@id/iv_btn_filter" />
 
     <TextView
         android:id="@+id/tv_location_country_city"

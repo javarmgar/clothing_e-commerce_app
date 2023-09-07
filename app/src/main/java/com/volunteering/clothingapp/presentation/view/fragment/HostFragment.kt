@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
+import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.LayoutFragmentHostBinding
 
 
@@ -33,7 +36,13 @@ class HostFragment : Fragment() {
     }
 
     private fun setChildFragments(savedInstanceState: Bundle?) {
-
+        if (savedInstanceState == null) {
+            childFragmentManager.commit {
+                add<GetStartedFragment>(R.id.fragment_container_view, tag = GetStartedFragment.TAG)
+                setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(GetStartedFragment.TAG))
+                setReorderingAllowed(true)
+            }
+        }
     }
 
     override fun onDestroyView() {

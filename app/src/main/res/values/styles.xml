@@ -540,6 +540,17 @@ w
         <item name="android:background">@drawable/background_btn_selector</item>
     </style>
 
+    <style name="btn_relative_60_4_1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth_percent">0.60</item>
+        <item name="layout_constraintDimensionRatio">4:1</item>
+    </style>
+
+    <style name="btn_selector.btn_relative_60_4_1" parent="btn_relative_60_4_1">
+        <item name="android:background">@drawable/background_btn_selector</item>
+    </style>
+
     <style name="btn_relative_80_4_1_orange_1" parent="btn_selector.btn_relative_80_4_1">
         <item name="android:background">@drawable/ic_btn_not_pressed_radius_9</item>
         <item name="android:backgroundTint">@color/color_orange_5</item>

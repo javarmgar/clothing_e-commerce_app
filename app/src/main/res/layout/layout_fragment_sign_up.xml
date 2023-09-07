@@ -190,7 +190,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_accept"
+        android:id="@+id/btn_login_accept"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/ic_btn_not_pressed_radius"

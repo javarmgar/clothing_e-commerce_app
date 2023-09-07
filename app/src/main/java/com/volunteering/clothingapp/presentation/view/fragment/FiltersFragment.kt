@@ -158,7 +158,6 @@ class FiltersFragment : Fragment() {
         _binding = null
     }
     companion object {
-        @JvmStatic
-        fun newInstance() = FiltersFragment()
+        const val TAG = "FiltersFragment"
     }
 }

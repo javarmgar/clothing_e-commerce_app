@@ -6,8 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
+import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.LayoutFragmentHomeBinding
-
+import com.volunteering.clothingapp.framework.library.utils.setVisible
 
 class HomeFragment : Fragment() {
 
@@ -33,7 +36,21 @@ class HomeFragment : Fragment() {
     }
 
     private fun setChildFragments(savedInstanceState: Bundle?) {
+        setCartFragment(savedInstanceState)
+    }
 
+    private fun setCartFragment(savedInstanceState: Bundle?) {
+        if (savedInstanceState == null) {
+            binding.layoutSearcher.ivBtnFilter.setOnClickListener {
+                binding.fragmentContainerView.setVisible()
+                childFragmentManager.commit {
+                    add<FiltersFragment>(R.id.fragment_container_view, tag = FiltersFragment.TAG)
+                    setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(FiltersFragment.TAG))
+                    setReorderingAllowed(true)
+                    addToBackStack(null)
+                }
+            }
+        }
     }
 
     override fun onDestroyView() {

@@ -71,7 +71,7 @@
         tools:text="@string/place_holder_text_subtitle_sign_up" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_accept"
+        android:id="@+id/btn_login_accept"
         style="@style/btn_selector.btn_relative_43_130_25_gr_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
