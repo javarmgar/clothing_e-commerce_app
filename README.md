@@ -32,7 +32,7 @@ The Clothing E-Commerce App serves as a platform where buyers can explore and pu
 
 As we are working in an Android project the Clean Architecture has been applied to the android App and some changes and adjustments were done.
 
-Here's a diagram of the Fetch Exercise App Architecture.<br>
+Here's a diagram of the App Architecture.<br>
   <img width="800" alt="image" src="https://github.com/javarmgar/FetchExercise/assets/21993768/0b4979b6-959d-4930-a842-cf8da93c594d">
   
 #### Android Components
