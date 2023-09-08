@@ -24,6 +24,6 @@ The Clothing E-Commerce App serves as a platform where buyers can explore and pu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/clothing_e-commerce_app.git
+   git clone git@github.com:javarmgar/clothing_e-commerce_app.git
 1. Open the project in Android Studio.
 1. Build and run the app on an emulator or device.
