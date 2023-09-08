@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_layout"
+    >
+
+    <TextView
+        android:id="@+id/tv_title_screen"
+        style="@style/h_24_r_b_l_primary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_screen"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_card_cart"
+        tools:itemCount="5"
+        tools:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_subtotal"
+        style="@style/h_16_os_sb_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_subtotal"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_1"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_subtotal_value"
+        style="@style/h_16_os_sb_n_l_black"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_subtotal_value"
+        tools:text="@string/place_holder_text_title_subtotal_value"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_1"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_discount"
+        style="@style/h_16_os_sb_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_discount"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_subtotal"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_discount_value"
+        style="@style/h_16_os_sb_n_l_black"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_discount_value"
+        tools:text="@string/place_holder_text_title_discount_value"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_subtotal_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_shipping"
+        style="@style/h_16_os_sb_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_shipping"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_discount"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_shipping_value"
+        style="@style/h_16_os_sb_n_l_black"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_shipping_value"
+        tools:text="@string/place_holder_text_title_shipping_value"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_discount_value"
+        />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_shipping"/>
+
+    <TextView
+        android:id="@+id/tv_title_total"
+        style="@style/h_16_os_sb_n_l_purple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_total"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_total_value"
+        style="@style/h_16_os_sb_n_l_purple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/text_title_total_value"
+        tools:text="@string/place_holder_text_title_total_value"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintWidth="wrap_content"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_go_back"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintDimensionRatio="133:48"
+        android:background="@drawable/ic_btn_not_pressed_radius"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h_16_b_b_c_tp"
+            android:text="@string/text_btn_go_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_checkout"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.47"
+        app:layout_constraintDimensionRatio="179:48"
+        android:background="@drawable/ic_btn_not_pressed_primary"
+        android:layout_marginBottom="@dimen/margin_16dp"
+
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintStart_toEndOf="@id/btn_go_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h_16_b_b_c_wh"
+            android:text="@string/text_btn_checkout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

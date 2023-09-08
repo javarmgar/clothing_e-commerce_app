@@ -14,9 +14,11 @@
 
     <dimen name="layout_corner_radius_s">5dp</dimen>
     <dimen name="layout_corner_radius_m">10dp</dimen>
+    <dimen name="layout_corner_radius_12dp">12dp</dimen>
     <dimen name="layout_corner_radius_l">14dp</dimen>
 
     <!--Margin dimens -->
+    <dimen name="margin_2dp">2dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
     <dimen name="margin_6dp">6dp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
@@ -61,6 +63,8 @@
 
     <!--Button dimens -->
     <dimen name="btn_stroke_1dp">1dp</dimen>
+    <dimen name="btn_stroke_2dp">2dp</dimen>
+    <dimen name="btn_stroke_4dp">4dp</dimen>
 
     <!--Icon dimens -->
 
@@ -74,9 +78,12 @@
     <dimen name="elevation_10">10dp</dimen>
 
     <!--Component's icon dimen -->
-    <dimen name="ic_btn_40_dp">40dp</dimen>
-    <dimen name="ic_btn_42_dp">42dp</dimen>
     <dimen name="ic_btn_20_dp">20dp</dimen>
+    <dimen name="ic_btn_24_dp">24dp</dimen>
+    <dimen name="ic_btn_28_dp">28dp</dimen>
+    <dimen name="ic_btn_30_dp">30dp</dimen>
+    <dimen name="ic_btn_42_dp">42dp</dimen>
+    <dimen name="ic_btn_40_dp">40dp</dimen>
 
 
     <!--General dimens -->
