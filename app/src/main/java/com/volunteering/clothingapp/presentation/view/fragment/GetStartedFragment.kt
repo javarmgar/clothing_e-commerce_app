@@ -41,8 +41,7 @@ class GetStartedFragment : Fragment() {
     private fun setChildFragments(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             binding.btnGetStarted.setOnClickListener {
-                binding.fragmentContainerView.setVisible()
-                childFragmentManager.commit {
+                requireActivity().supportFragmentManager.commit {
                     add<SignInFragment>(R.id.fragment_container_view, tag = SignInFragment.TAG)
                     setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(SignInFragment.TAG))
                     setReorderingAllowed(true)

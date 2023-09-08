@@ -4,20 +4,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@color/color_background_layout"
-    android:paddingVertical="@dimen/_16dp">
+    android:layout_height="match_parent"
+    tools:layout_width="wrap_content"
+    tools:layout_height="@dimen/_50dp"
+    android:layout_marginHorizontal="@dimen/margin_8dp"
+    >
 
-    <ImageView
-        android:id="@+id/iv_clothe_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_8dp"
-        android:src="@drawable/background_card_category"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/iv_bg_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/background_card_category"
+        android:button="@android:color/transparent"
+        android:checked="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <CheckBox
+        android:id="@+id/iv_circle_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:button="@android:color/transparent"
+        android:checked="false"
+        app:layout_constraintHeight_percent="0.8"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:background="@drawable/img_circle_sel"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
     <TextView
         android:id="@+id/tv_clothe_category_title"
@@ -25,11 +45,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_clothe_category_title"
-        app:layout_constraintBottom_toBottomOf="@id/iv_clothe_category"
-        app:layout_constraintEnd_toEndOf="@id/iv_clothe_category"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="@id/iv_clothe_category"
-        app:layout_constraintTop_toTopOf="@id/iv_clothe_category"
-        tools:text="@string/place_holder_text_clothe_category_title" />
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_circle_category"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/place_holder_text_clothe_category_title"
+        tools:ignore="RtlSymmetry" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

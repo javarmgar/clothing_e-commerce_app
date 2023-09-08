@@ -13,11 +13,23 @@
         style="@style/h_20_b_b_l_onp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginHorizontal="@dimen/margin_16dp"
         android:text="@string/text_searcher_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <include
+        android:id="@+id/layout_cart_component"
+        layout="@layout/layout_cart_component"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        app:layout_constraintDimensionRatio="38:39"
+        app:layout_constraintStart_toStartOf="@id/iv_btn_filter"
+        app:layout_constraintEnd_toEndOf="@id/iv_btn_filter"
+        app:layout_constraintBottom_toTopOf="@id/iv_btn_filter"
+        />
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="0dp"

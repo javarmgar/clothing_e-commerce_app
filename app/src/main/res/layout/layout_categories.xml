@@ -18,18 +18,19 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_clothes_categories"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintHeight="50dp"
         android:layout_marginVertical="@dimen/margin_16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_clothe_category_title"
-        tools:itemCount="8"
-        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:itemCount="4"
         tools:listitem="@layout/item_card_category"
-        tools:orientation="horizontal"
         tools:scrollbars="horizontal"
-        tools:spanCount="1" />
+       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

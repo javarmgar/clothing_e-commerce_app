@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color_background_layout"
-    android:paddingBottom="@dimen/padding_16dp">
+    >
 
     <ImageView
         android:id="@+id/iv_btn_filter"
@@ -16,7 +16,9 @@
         android:elevation="@dimen/elevation_4"
         android:background="@drawable/ic_btn_nav_drawer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
     <ImageView
         android:id="@+id/iv_header_ic_location"

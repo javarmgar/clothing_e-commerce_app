@@ -190,6 +190,9 @@
     <string name="text_subtitle_seller_details">Seller details</string>
     <string name="text_subtitle_cart_details">Cart Details</string>
     <string name="text_btn_confirm_purchase">Confirm purchase</string>
+    <string name="text_notification_number" />
+    <string name="place_holder_text_notification_number">1</string>
+    <string name="text_btn_add_to_cart">Add to cart</string>
 
     <string-array name="hiring_fields">
         <item>No sorting</item>

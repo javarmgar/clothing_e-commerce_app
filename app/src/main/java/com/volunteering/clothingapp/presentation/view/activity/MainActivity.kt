@@ -8,7 +8,7 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.ActivityMainBinding
-import com.volunteering.clothingapp.presentation.view.fragment.HostFragment
+import com.volunteering.clothingapp.presentation.view.fragment.GetStartedFragment
 import com.volunteering.clothingapp.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
     private fun setHostFragment(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
-                add<HostFragment>(R.id.fragment_container_view, tag = HostFragment.TAG)
-                setPrimaryNavigationFragment(supportFragmentManager.findFragmentByTag(HostFragment.TAG))
+                add<GetStartedFragment>(R.id.fragment_container_view, tag = GetStartedFragment.TAG)
+                setPrimaryNavigationFragment(supportFragmentManager.findFragmentByTag(GetStartedFragment.TAG))
                 setReorderingAllowed(true)
             }
         }

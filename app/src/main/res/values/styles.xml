@@ -14,6 +14,15 @@
 
     <!--Text styles-->
 
+    <style name="h_9_r_r_n_c_white">
+        <item name="android:textSize">9sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
     <style name="h_9_r_r_n_c_p">
         <item name="android:textSize">9sp</item>
         <item name="android:fontFamily">@font/roboto</item>

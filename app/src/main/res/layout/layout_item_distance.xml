@@ -26,9 +26,9 @@
         android:layout_height="0dp"
         android:text="@string/text_clothe_location_distance"
         app:layout_constraintBottom_toBottomOf="@id/iv_clothe_location_distance"
+        app:layout_constraintStart_toEndOf="@id/iv_clothe_location_distance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/iv_clothe_location_distance"
         app:layout_constraintTop_toTopOf="@id/iv_clothe_location_distance"
         app:layout_constraintWidth="wrap_content"
         tools:text="@string/place_holder_text_clothe_location_distance" />

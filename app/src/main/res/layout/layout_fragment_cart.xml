@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_16dp"
-        app:layout_constraintBottom_toTopOf="@id/guideline_1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_screen"
@@ -35,7 +35,7 @@
         tools:orientation="vertical" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_1"
+        android:id="@+id/guideline_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -51,7 +51,7 @@
         android:text="@string/text_title_subtotal"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_vertical"
         app:layout_constraintWidth="wrap_content" />
 
     <TextView
@@ -64,7 +64,7 @@
         android:text="@string/text_title_subtotal_value"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_vertical"
         app:layout_constraintWidth="wrap_content"
         tools:text="@string/place_holder_text_title_subtotal_value" />
 

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:height="@dimen/_50dp"
-        android:width="@dimen/_120dp">
+    <item>
         <shape
             android:shape="rectangle">
             <corners
@@ -12,19 +10,6 @@
             <stroke
                 android:color="@color/color_black"
                 android:width="0.1dp" />
-        </shape>
-    </item>
-    <item
-        android:top="@dimen/_5dp"
-        android:left="@dimen/_5dp"
-        android:width="40dp"
-        android:height="40dp">
-        <shape
-            android:shape="rectangle">
-            <corners
-                android:radius="@dimen/_20dp"/>
-            <solid
-                android:color="@color/color_sel_item_ic_category"/>
         </shape>
     </item>
 </layer-list>

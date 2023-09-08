@@ -10,6 +10,7 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.volunteering.clothingapp.R
 import com.volunteering.clothingapp.databinding.LayoutFragmentSignInBinding
+import com.volunteering.clothingapp.framework.library.utils.setGone
 import com.volunteering.clothingapp.framework.library.utils.setVisible
 
 
@@ -44,8 +45,7 @@ class SignInFragment : Fragment() {
     private fun setHomeFragment(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             binding.btnLoginAccept.setOnClickListener {
-                binding.fragmentContainerView.setVisible()
-                childFragmentManager.commit {
+                requireActivity().supportFragmentManager.commit {
                     add<HomeFragment>(R.id.fragment_container_view, tag = HomeFragment.TAG)
                     setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(HomeFragment.TAG))
                     setReorderingAllowed(true)
@@ -58,8 +58,7 @@ class SignInFragment : Fragment() {
     private fun setSignUpFragment(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
             binding.tvSignUpTitle.setOnClickListener {
-                binding.fragmentContainerView.setVisible()
-                childFragmentManager.commit {
+                requireActivity().supportFragmentManager.commit {
                     add<SignUpFragment>(R.id.fragment_container_view, tag = SignUpFragment.TAG)
                     setPrimaryNavigationFragment(childFragmentManager.findFragmentByTag(SignUpFragment.TAG))
                     setReorderingAllowed(true)

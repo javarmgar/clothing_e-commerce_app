@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <color name="color_primary">#EC9126</color>
     <color name="color_surface">#FFFFFF</color>
     <color name="color_on_primary">#0F0F2D</color>
@@ -9,7 +8,6 @@
     <color name="color_on_secondary">#848484</color>
     <color name="color_on_surface">#000000</color>
     <color name="color_transparent">#0000</color>
-
 
     <!-- Colors for backgrounds -->
 
@@ -22,7 +20,7 @@
 
     <!-- Colors for cards -->
 
-    <color name="color_card_checked">@color/color_purple_light_1</color>
+    <color name="color_card_checked">@color/color_purple_light_2</color>
     <color name="color_card_ic_checked">@color/color_purple_light_1</color>
 
     <color name="color_card_not_checked">@color/color_white_1</color>
