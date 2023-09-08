@@ -17,6 +17,8 @@
     <color name="dialog_background_light_2">#0F1638</color>
     <color name="color_background_images">#F9C28D</color>
     <color name="color_background_layout">@color/color_white_1</color>
+    <color name="color_background_primary_light_1">@color/color_orange_3</color>
+
 
     <!-- Colors for cards -->
 
@@ -54,6 +56,11 @@
     <color name="color_dg_error_title">@color/color_red_2</color>
     <color name="color_dg_warning_title">@color/color_yellow_1</color>
 
+    <!-- Colors for States -->
+    <color name="color_available">@color/color_green_1</color>
+    <color name="color_sold">@color/color_red_2</color>
+    <color name="color_inactive">@color/color_gray_1</color>
+
     <!-- Color Literals -->
     <color name="color_black">#FF000000</color>
     <color name="color_white">#FFFFFFFF</color>
@@ -61,6 +68,9 @@
     <color name="color_red_2">#E23636</color>
     <color name="color_orange_1">#EC943E</color>
     <color name="color_orange_2">#CA7622</color>
+    <color name="color_orange_3">#FBB145</color>
+    <color name="color_orange_4">#D17C27</color>
+    <color name="color_orange_5">#EC9126</color>
     <color name="color_gray_1">#555555</color>
     <color name="color_gray_2">#B8B2B2</color>
     <color name="color_purple_light">#AD5FF6</color>
