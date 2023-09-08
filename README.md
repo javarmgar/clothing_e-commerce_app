@@ -27,3 +27,52 @@ The Clothing E-Commerce App serves as a platform where buyers can explore and pu
    git clone git@github.com:javarmgar/clothing_e-commerce_app.git
 1. Open the project in Android Studio.
 1. Build and run the app on an emulator or device.
+
+## Screenshots
+
+Below are some screenshots showcasing key features of the Clothing E-Commerce App.
+
+**Get started, Sign In and Sign up**
+
+<img width="220" alt="clothing_1" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/c58ea7fb-3785-4214-8a03-03f6f8677edb">
+<img width="220" alt="clothing_2" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/9da4aece-68c7-46e0-b721-7ebae7dfd4bc">
+<img width="220" alt="clothing_3" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/2431271f-8da6-45ed-a679-2985a652d736">
+
+**Home, Filters and Cloth Details**
+
+<img width="220" alt="clothing_4" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/26b4da0b-4fdd-4713-866b-69cac1e0ef4a">
+<img width="220" alt="clothing_5_1" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/13fb76d1-01a9-4f7f-989f-5d1df9283f7f">
+<img width="220" alt="clothing_5_2" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/fedbc80f-3d61-4676-9aa3-d7f61f1e64cd">
+<img width="220" alt="clothing_6" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/5c31eae4-7c74-4600-ad02-5705fb185efa">
+
+**Cart Screen**
+
+<img width="220" alt="clothing_7" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/8be196b7-0bb4-428f-a91a-7d86fbb95204">
+
+**Chooser and creator client Address**
+
+<img width="220" alt="clothing_8" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/1f8e5cf6-acb7-46e7-9e51-9b28a164cd14">
+<img width="220" alt="clothing_9" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/34e08fab-9172-4402-95e7-9e8bc077fe83">
+
+
+**Payment method picker**
+
+<img width="220" alt="clothing_10" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/11dafe47-6e10-4d23-a777-f92fd3b7199d">
+
+**Review and confirm and Purchase done**
+
+<img width="220" alt="clothing_11" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/57eddbc9-62e6-40d7-b30a-ea3e2135d5f6">
+<img width="220" alt="clothing_12" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/ca25ac6c-44d0-41b4-b233-1c634f847105">
+
+**Select and create location**
+
+<img width="220" alt="clothing_13" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/ffc63b9b-1067-4848-9d4b-ad0a5a6bda84">
+<img width="220" alt="clothing_14" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/caf57c7b-32ef-401a-8ba4-8ec8a7ffe9a9">
+
+**Dialogs**
+
+<img width="220" alt="clothing_15_1" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/565c7659-a348-4ef2-a37f-7efafaea4e2b">
+<img width="220" alt="clothing_15_2" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/2c607784-ade9-4cfc-9c8d-72fb764b549f">
+<img width="220" alt="clothing_15_3" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/7a435cc8-f007-49de-80dc-82438f585e46">
+<img width="220" alt="clothing_15_4" src="https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/fca6dace-4503-40f8-8b1f-aaf1084c092e">
+
