@@ -8,6 +8,8 @@
     <color name="color_error">@color/color_red_1</color>
     <color name="color_on_secondary">#848484</color>
     <color name="color_on_surface">#000000</color>
+    <color name="color_transparent">#0000</color>
+
 
     <!-- Colors for backgrounds -->
 
@@ -31,6 +33,10 @@
     <color name="color_btn_not_pressed">#FFFFFF</color>
     <color name="color_btn_stroke_not_pressed">#000000</color>
     <color name="color_btn_text_primary">#7C4B35</color>
+
+    <color name="color_btn_not_pressed_primary">@color/color_primary</color>
+    <color name="color_btn_stroke_not_pressed_primary">#000000</color>
+    <color name="color_btn_text_primary_primary">@color/color_white</color>
 
     <!-- Colors for Text Fields - EditTexts -->
 
@@ -63,5 +69,6 @@
     <color name="color_white_2">#F5F5F5</color>
     <color name="color_yellow_1">#EDB95E</color>
     <color name="color_green_1">#5CB85C</color>
+    <color name="purple_200">#FFBB86FC</color>
 
 </resources>
