@@ -28,6 +28,24 @@ The Clothing E-Commerce App serves as a platform where buyers can explore and pu
 1. Open the project in Android Studio.
 1. Build and run the app on an emulator or device.
 
+### App Architecture
+
+As we are working in an Android project the Clean Architecture has been applied to the android App and some changes and adjustments were done.
+
+Here's a diagram of the Fetch Exercise App Architecture.<br>
+  <img width="800" alt="image" src="https://github.com/javarmgar/FetchExercise/assets/21993768/0b4979b6-959d-4930-a842-cf8da93c594d">
+  
+#### Android Components
+Fetch Exercise App is composed by the following android components.
+- **core component**:
+  - It holds only abstract entities i.e. interfaces and abstract classes, by decoupling abstract entities from concrete implementations we can make a reusable project. This component can be later reusable from other components namely Android TV apps, automobile apps and so on.
+  - Additionally this component DO NOT have access to Android SDK, forcing developers to correctly implement **SOLID** principles
+- **app component**: This is the actual app, it has access to android SDK and libraries. Core component is imported as a local dependency, then concrete classes implement core interfaces and abstract classes.
+
+## Flow navigation 
+
+![Flow_navigation](https://github.com/javarmgar/clothing_e-commerce_app/assets/21993768/a7db67cb-9045-465a-be85-9e5b9e0e8f43)
+
 ## Screenshots
 
 Below are some screenshots showcasing key features of the Clothing E-Commerce App.
