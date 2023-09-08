@@ -14,6 +14,15 @@
 
     <!--Text styles-->
 
+    <style name="h_9_r_r_n_c_white">
+        <item name="android:textSize">9sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
     <style name="h_9_r_r_n_c_p">
         <item name="android:textSize">9sp</item>
         <item name="android:fontFamily">@font/roboto</item>
@@ -69,13 +78,22 @@ w
         <item name="android:textColor">@color/color_sel_text_card_category</item>
     </style>
 
-    <style name="h_12_os_m_n_l_gray" parent="h_12_os_m_n_l_p">
+    <style name="h_12_os_m_n_l_sel" parent="h_12_os_m_n_l_p">
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="fontFamily">@font/open_sans</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_sel_text_card_category</item>
+    </style>
+
+    <style name="h_12_os_m_n_l_gray" parent="h_12_os_m_n_l_p">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
     </style>
 
     <style name="h_12_os_b_b_l_s">
@@ -135,7 +153,7 @@ w
         <item name="android:textColor">@color/color_gray_1</item>
     </style>
 
-    <style name="h_12_n_l_g1">
+    <style name="h_12_n_l_g1_7ems">
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="fontFamily">@font/roboto</item>
@@ -143,6 +161,24 @@ w
         <item name="android:gravity">left</item>
         <item name="android:ems">7</item>
         <item name="android:textColor">@color/color_gray_1</item>
+    </style>
+
+    <style name="h_12_n_l_g1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_gray_1</item>
+    </style>
+
+    <style name="h_12_n_l_sel_chip">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_sel_text_chip</item>
     </style>
 
     <style name="h_12_n_l_g1_no_ems">
@@ -223,6 +259,15 @@ w
         <item name="android:textColor">@color/color_text_secondary</item>
     </style>
 
+    <style name="h_14_os_sb_b_l_s">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+
     <style name="h_15_m_n_l_bl">
         <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -272,7 +317,7 @@ w
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_white</item>
     </style>
 
@@ -302,7 +347,6 @@ w
         <item name="android:textColor">@color/color_white</item>
     </style>
 
-
     <style name="h_16_r_n_l_p">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -310,6 +354,15 @@ w
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_text_location</item>
+    </style>
+
+    <style name="h_16_os_r_n_l_s">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
     </style>
 
     <style name="h_16_os_sb_n_l_s">
@@ -336,7 +389,16 @@ w
         <item name="fontFamily">@font/open_sans_semibold</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">left</item>
-        <item name="android:textColor">@color/color_purple_light</item>
+        <item name="android:textColor">@color/color_purple_light_1</item>
+    </style>
+
+    <style name="h_18_r_b_l_wh_1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
     <style name="h_18_r_n_l_p">
@@ -354,7 +416,7 @@ w
         <item name="fontFamily">@font/nunito_sans</item>
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/color_purple_light</item>
+        <item name="android:textColor">@color/color_purple_light_1</item>
     </style>
 
     <style name="h_20_b_b_l_onp">
@@ -364,6 +426,15 @@ w
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="h_20_b_b_l_white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
     <style name="h_20_r_b_c_primary">
@@ -475,6 +546,17 @@ w
     </style>
 
     <style name="btn_selector.btn_relative_80_4_1" parent="btn_relative_80_4_1">
+        <item name="android:background">@drawable/background_btn_selector</item>
+    </style>
+
+    <style name="btn_relative_60_4_1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth_percent">0.60</item>
+        <item name="layout_constraintDimensionRatio">4:1</item>
+    </style>
+
+    <style name="btn_selector.btn_relative_60_4_1" parent="btn_relative_60_4_1">
         <item name="android:background">@drawable/background_btn_selector</item>
     </style>
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.clothingapp.core.data.remote.model.params.Status
 import com.volunteering.clothingapp.R
 
 class ItemStatusView @JvmOverloads constructor(
@@ -23,9 +24,9 @@ class ItemStatusView @JvmOverloads constructor(
         const val INACTIVE = 2
     }
 
-    private var _state: Int = AVAILABLE
+    private var _state: Status = Status.AVAILABLE
 
-    var state: Int
+    var state: Status
         get() = _state
         set(value) {
             _state = value
@@ -39,25 +40,29 @@ class ItemStatusView @JvmOverloads constructor(
         stateTextView = findViewById(R.id.tv_item_name)
         stateImageView = findViewById(R.id.iv_item_status)
         context.obtainStyledAttributes(attrs, R.styleable.ItemStatusView).apply {
-            _state = getInt(R.styleable.ItemStatusView_status, 0)
+            _state = when(getInt(R.styleable.ItemStatusView_status, 0)){
+                0 -> Status.AVAILABLE
+                1 -> Status.SOLD
+                else -> Status.ARCHIVED
+            }
             recycle()
         }
         updateUIBasedOnState(_state)
     }
 
-    private fun updateUIBasedOnState(state: Int) {
+    private fun updateUIBasedOnState(state: Status) {
         when (state) {
-            AVAILABLE -> { // Available
+            Status.AVAILABLE -> { // Available
                 stateTextView.text = resources.getText(R.string.text_status_available)
                 stateImageView.setImageResource(R.drawable.ic_available)
             }
 
-            SOLD -> { // Sold
+            Status.SOLD -> { // Sold
                 stateTextView.text = resources.getText(R.string.text_status_sold)
                 stateImageView.setImageResource(R.drawable.ic_sold)
             }
 
-            INACTIVE -> { // Inactive
+            else -> { // Inactive
                 stateTextView.text = resources.getText(R.string.text_status_inactive)
                 stateImageView.setImageResource(R.drawable.ic_inactive)
             }

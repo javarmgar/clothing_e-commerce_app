@@ -5,188 +5,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_background_layout"
-    >
+    android:background="@color/color_background_layout">
 
     <TextView
         android:id="@+id/tv_title_screen"
         style="@style/h_24_r_b_l_primary"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_screen"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_screen"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_cart_items"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen"
+        tools:itemCount="5"
         tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_card_cart"
-        tools:itemCount="5"
-        tools:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_screen"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guideline_1"
-        />
+        tools:orientation="vertical" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_1"
+        android:id="@+id/guideline_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.65"
-        />
+        app:layout_constraintGuide_percent="0.65" />
 
     <TextView
         android:id="@+id/tv_title_subtotal"
         style="@style/h_16_os_sb_n_l_s"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_subtotal"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_subtotal"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
-        />
+        app:layout_constraintTop_toBottomOf="@id/guideline_vertical"
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_title_subtotal_value"
         style="@style/h_16_os_sb_n_l_black"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_subtotal_value"
-        tools:text="@string/place_holder_text_title_subtotal_value"
         android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginEnd="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
+        android:text="@string/text_title_subtotal_value"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
-        />
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline_vertical"
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_title_subtotal_value" />
 
     <TextView
         android:id="@+id/tv_title_discount"
         style="@style/h_16_os_sb_n_l_s"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_discount"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_discount"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_subtotal"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_title_discount_value"
         style="@style/h_16_os_sb_n_l_black"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_discount_value"
-        tools:text="@string/place_holder_text_title_discount_value"
         android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginEnd="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
+        android:text="@string/text_title_discount_value"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_title_subtotal_value"
-        />
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_title_discount_value" />
 
     <TextView
         android:id="@+id/tv_title_shipping"
         style="@style/h_16_os_sb_n_l_s"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_shipping"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_shipping"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_discount"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_title_shipping_value"
         style="@style/h_16_os_sb_n_l_black"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_shipping_value"
-        tools:text="@string/place_holder_text_title_shipping_value"
         android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginEnd="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
+        android:text="@string/text_title_shipping_value"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_title_discount_value"
-        />
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_title_shipping_value" />
 
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/margin_16dp"
-        android:layout_marginHorizontal="@dimen/margin_16dp"
         android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_shipping"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_title_shipping" />
 
     <TextView
         android:id="@+id/tv_title_total"
         style="@style/h_16_os_sb_n_l_purple"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_total"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_total"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider1"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_title_total_value"
         style="@style/h_16_os_sb_n_l_purple"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_total_value"
-        tools:text="@string/place_holder_text_title_total_value"
         android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginEnd="@dimen/margin_16dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
+        android:text="@string/text_title_total_value"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/divider1"
-        />
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_title_total_value" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_go_back"
-        android:layout_height="0dp"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent="0.35"
-        app:layout_constraintDimensionRatio="133:48"
-        android:background="@drawable/ic_btn_not_pressed_radius"
+        android:layout_height="0dp"
         android:layout_marginBottom="@dimen/margin_16dp"
-        app:layout_constraintVertical_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn_checkout"
+        android:background="@drawable/ic_btn_not_pressed_radius"
+        android:elevation="@dimen/elevation_8"
         app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintDimensionRatio="133:48"
+        app:layout_constraintEnd_toStartOf="@id/btn_checkout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_percent="0.35">
+
         <TextView
+            style="@style/h_16_b_b_c_tp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/h_16_b_b_c_tp"
             android:text="@string/text_btn_go_back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -197,22 +186,22 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_checkout"
-        android:layout_height="0dp"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent="0.47"
-        app:layout_constraintDimensionRatio="179:48"
-        android:background="@drawable/ic_btn_not_pressed_primary"
+        android:layout_height="0dp"
         android:layout_marginBottom="@dimen/margin_16dp"
-
-        app:layout_constraintVertical_bias="0.09"
-        app:layout_constraintStart_toEndOf="@id/btn_go_back"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_btn_not_pressed_primary"
         app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintDimensionRatio="179:48"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_go_back"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_percent="0.47">
+
         <TextView
+            style="@style/h_16_b_b_c_wh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/h_16_b_b_c_wh"
             android:text="@string/text_btn_checkout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -220,5 +209,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

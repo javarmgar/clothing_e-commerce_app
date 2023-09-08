@@ -5,35 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_width="40dp"
     tools:layout_height="15dp"
-    >
+    tools:layout_width="40dp">
 
     <ImageView
         android:id="@+id/iv_clothe_location_distance"
-        android:src="@drawable/ic_map_pin_2_vector"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth="wrap_content"
+        android:src="@drawable/ic_map_pin_2_vector"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <TextView
         android:id="@+id/tv_clothe_location_distance"
         style="@style/h_12_r_b_l_g1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
-        tools:text="@string/place_holder_text_clothe_location_distance"
         android:text="@string/text_clothe_location_distance"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_clothe_location_distance"
-        app:layout_constraintTop_toTopOf="@id/iv_clothe_location_distance"
         app:layout_constraintBottom_toBottomOf="@id/iv_clothe_location_distance"
-        />
+        app:layout_constraintStart_toEndOf="@id/iv_clothe_location_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/iv_clothe_location_distance"
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_clothe_location_distance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

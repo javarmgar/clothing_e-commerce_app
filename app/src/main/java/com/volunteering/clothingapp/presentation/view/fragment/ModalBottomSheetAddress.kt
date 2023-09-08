@@ -94,7 +94,6 @@ class ModalBottomSheetAddress : BottomSheetDialogFragment() {
         (this.dialog as BottomSheetDialog).behavior.apply {
             removeBottomSheetCallback(bottomSheetCallback)
         }
-
     }
 
     override fun onDestroy() {
@@ -116,8 +115,6 @@ class ModalBottomSheetAddress : BottomSheetDialogFragment() {
         super.onCancel(dialog)
         Log.d(LOG_TAG, "onCancel() -> ")
     }
-
-
 
     companion object {
         const val TAG = "ModalBottomSheet"

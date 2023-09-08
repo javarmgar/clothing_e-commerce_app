@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_16dp"
+    android:layout_marginVertical="@dimen/margin_8dp"
+    android:background="@drawable/background_card_full"
+    android:elevation="@dimen/_15dp"
+    tools:layout_height="220dp"
+    tools:layout_width="340dp">
+
+    <ImageView
+        android:id="@+id/iv_card_bank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_16dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_card_1_vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bank_account_number"
+        style="@style/h_18_r_b_l_wh_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder_text_bank_account_number"
+        app:layout_constraintBottom_toBottomOf="@id/iv_card_bank"
+        app:layout_constraintEnd_toEndOf="@id/iv_card_bank"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@id/iv_card_bank"
+        app:layout_constraintTop_toTopOf="@id/iv_card_bank"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_bank_account_name"
+        style="@style/h_18_r_b_l_wh_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_holder_text_bank_account_name"
+        app:layout_constraintBottom_toBottomOf="@id/iv_card_bank"
+        app:layout_constraintEnd_toEndOf="@id/iv_card_bank"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@id/iv_card_bank"
+        app:layout_constraintTop_toTopOf="@id/iv_card_bank"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <!--    TODO add other types of network icon cards e.g. mastercard-->
+    <ImageView
+        android:id="@+id/iv_card_bank_type_network"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_visa_vector"
+        app:layout_constraintBottom_toBottomOf="@id/iv_card_bank"
+        app:layout_constraintEnd_toEndOf="@id/iv_card_bank"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@id/iv_card_bank"
+        app:layout_constraintTop_toTopOf="@id/iv_card_bank"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <CheckBox
+        android:id="@+id/cb_card_selected"
+        android:layout_width="@dimen/ic_btn_24_dp"
+        android:layout_height="@dimen/ic_btn_24_dp"
+        android:background="@drawable/selector_img_shipping_address"
+        android:button="@android:color/transparent"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@id/iv_card_bank"
+        app:layout_constraintEnd_toEndOf="@id/iv_card_bank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,66 +6,63 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color_background_layout"
-    android:paddingBottom="@dimen/padding_16dp"
     >
 
     <ImageView
-        android:id="@+id/iv_header_btn_nav_drawer"
+        android:id="@+id/iv_btn_filter"
         android:layout_width="@dimen/ic_btn_40_dp"
         android:layout_height="@dimen/ic_btn_40_dp"
-        android:src="@drawable/ic_btn_nav_drawer"
+        android:layout_margin="@dimen/margin_16dp"
+        android:elevation="@dimen/elevation_4"
+        android:background="@drawable/ic_btn_nav_drawer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="@dimen/margin_16dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
     <ImageView
         android:id="@+id/iv_header_ic_location"
         android:layout_width="@dimen/ic_btn_20_dp"
         android:layout_height="@dimen/ic_btn_20_dp"
-        android:src="@drawable/ic_location"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintTop_toTopOf="@id/iv_header_btn_nav_drawer"
-        app:layout_constraintBottom_toBottomOf="@id/iv_header_btn_nav_drawer"
-        app:layout_constraintStart_toEndOf="@id/iv_header_btn_nav_drawer"
-        app:layout_constraintEnd_toStartOf="@id/tv_location_country_city"
         android:layout_margin="@dimen/margin_8dp"
-        />
+        android:src="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="@id/iv_btn_filter"
+        app:layout_constraintEnd_toStartOf="@id/tv_location_country_city"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/iv_btn_filter"
+        app:layout_constraintTop_toTopOf="@id/iv_btn_filter" />
 
     <TextView
         android:id="@+id/tv_location_country_city"
+        style="@style/h_16_r_n_l_p"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/h_16_r_n_l_p"
-        tools:text="@string/place_holder_text_location_country_city"
         android:text="@string/text_location_country_city"
-        app:layout_constraintStart_toEndOf="@id/iv_header_ic_location"
-        app:layout_constraintEnd_toStartOf="@id/iv_header_ic_arrow_change_location"
-        app:layout_constraintTop_toTopOf="@id/iv_header_ic_location"
         app:layout_constraintBottom_toBottomOf="@id/iv_header_ic_location"
-        />
+        app:layout_constraintEnd_toStartOf="@id/iv_header_ic_arrow_change_location"
+        app:layout_constraintStart_toEndOf="@id/iv_header_ic_location"
+        app:layout_constraintTop_toTopOf="@id/iv_header_ic_location"
+        tools:text="@string/place_holder_text_location_country_city" />
 
     <ImageView
         android:id="@+id/iv_header_ic_arrow_change_location"
         android:layout_width="@dimen/ic_btn_20_dp"
         android:layout_height="@dimen/ic_btn_20_dp"
-        android:src="@drawable/ic_arrow_down"
-        app:layout_constraintTop_toTopOf="@id/tv_location_country_city"
-        app:layout_constraintStart_toEndOf="@id/tv_location_country_city"
-        app:layout_constraintEnd_toStartOf="@id/iv_header_btn_profile_thumbnail"
-        app:layout_constraintBottom_toBottomOf="@id/tv_location_country_city"
         android:layout_marginHorizontal="@dimen/margin_8dp"
-        />
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="@id/tv_location_country_city"
+        app:layout_constraintEnd_toStartOf="@id/iv_header_btn_profile_thumbnail"
+        app:layout_constraintStart_toEndOf="@id/tv_location_country_city"
+        app:layout_constraintTop_toTopOf="@id/tv_location_country_city" />
 
 
     <ImageView
         android:id="@+id/iv_header_btn_profile_thumbnail"
         android:layout_width="@dimen/ic_btn_40_dp"
         android:layout_height="@dimen/ic_btn_40_dp"
-        android:src="@drawable/ic_profile_thumbnail"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="@dimen/margin_16dp"
+        android:src="@drawable/ic_profile_thumbnail"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

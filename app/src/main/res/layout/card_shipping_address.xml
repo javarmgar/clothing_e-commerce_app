@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_16dp"
+    android:background="@drawable/background_card_full"
+    android:elevation="@dimen/elevation_4"
+    tools:layout_height="128dp"
+    tools:layout_width="340dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="@dimen/_0dp"
+        android:background="@drawable/img_truck"
+        android:elevation="@dimen/elevation_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27" />
+
+
+    <TextView
+        android:id="@+id/tv_address_detailed_1"
+        style="@style/h_15_rm_r_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/tv_address_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/place_holder_tv_address_detailed_1" />
+
+    <TextView
+        android:id="@+id/tv_address_detailed_2"
+        style="@style/h_12_n_l_g1_no_ems"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/text_address_detailed"
+        app:layout_constraintStart_toStartOf="@id/tv_address_detailed_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_detailed_1"
+        tools:text="@string/place_holder_tv_address_detailed_2" />
+
+    <TextView
+        android:id="@+id/tv_address_phone_number"
+        style="@style/h_10_os_r_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:text="@string/text_address_phone_number"
+        app:layout_constraintStart_toStartOf="@id/tv_address_detailed_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_detailed_2"
+        tools:text="@string/place_holder_text_address_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_address_zip_code"
+        style="@style/h_10_os_b_b_l_s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:text="@string/text_address_zip_code"
+        app:layout_constraintStart_toStartOf="@id/tv_address_phone_number"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_address_zip_code_value"
+        style="@style/h_10_os_r_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:text="@string/text_address_zip_code_value"
+        app:layout_constraintStart_toEndOf="@id/tv_address_zip_code"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_phone_number"
+        tools:text="@string/place_holder_text_address_zip_code_value" />
+
+    <TextView
+        android:id="@+id/tv_address_notes"
+        style="@style/h_10_os_b_b_l_s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:text="@string/text_address_notes"
+        app:layout_constraintStart_toStartOf="@id/tv_address_zip_code"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_zip_code" />
+
+    <TextView
+        android:id="@+id/tv_address_notes_value"
+        style="@style/h_10_os_r_n_l_s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:text="@string/text_address_notes_value"
+        app:layout_constraintStart_toEndOf="@id/tv_address_notes"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_zip_code_value"
+        tools:text="@string/place_holder_text_address_notes_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

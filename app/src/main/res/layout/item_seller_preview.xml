@@ -1,69 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_width="327dp"
-    tools:layout_height="72dp"
-    android:elevation="@dimen/elevation_4"
     android:background="@drawable/background_card_full"
-    >
+    android:elevation="@dimen/elevation_4"
+    tools:layout_height="72dp"
+    tools:layout_width="327dp">
 
     <ImageView
         android:id="@+id/iv_seller_view"
-        android:src="@drawable/ic_seller_mock_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintHeight_percent="0.71"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_seller_mock_1"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_seller_name"
         style="@style/h_12_os_b_b_l_p"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_title_details_title"
-        tools:text="@string/place_holder_text_seller_name"
-        android:layout_marginTop="@dimen/margin_16dp"
         android:layout_marginStart="@dimen/margin_16dp"
-        app:layout_constraintStart_toEndOf="@id/iv_seller_view"
-        app:layout_constraintWidth="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/text_title_details_title"
         app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_seller_view"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintWidth="wrap_content"
+        tools:text="@string/place_holder_text_seller_name" />
 
     <TextView
         android:id="@+id/tv_view_full_profile"
         style="@style/h_11_os_r_n_l_or_4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/text_view_full_profile"
         android:layout_marginStart="@dimen/margin_16dp"
+        android:text="@string/text_view_full_profile"
+        app:layout_constraintBottom_toBottomOf="@id/iv_seller_arrow"
         app:layout_constraintEnd_toStartOf="@id/iv_seller_arrow"
-        app:layout_constraintWidth="wrap_content"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintTop_toTopOf="@id/iv_seller_arrow"
-        app:layout_constraintBottom_toBottomOf="@id/iv_seller_arrow"
-        />
+        app:layout_constraintWidth="wrap_content" />
 
     <ImageView
         android:id="@+id/iv_seller_arrow"
-        android:src="@drawable/ic_arrow_right"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
         android:layout_marginEnd="@dimen/margin_16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_arrow_right"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

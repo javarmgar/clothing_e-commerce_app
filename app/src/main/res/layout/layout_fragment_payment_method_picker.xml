@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,78 +8,56 @@
     android:background="@color/color_background_layout">
 
     <TextView
-        android:id="@+id/tv_title_screen_shipping_address"
+        android:id="@+id/tv_title_screen_purchase_done"
         style="@style/h_24_r_b_l_primary_no_ems"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/margin_16dp"
         android:layout_marginTop="@dimen/margin_16dp"
-        android:text="@string/text_title_screen_shipping_address"
+        android:text="@string/text_title_screen_payment_methods"
         app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth="wrap_content" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_cart_items"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_bank_cards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/margin_16dp"
-        app:layout_constraintBottom_toTopOf="@id/guideline_1"
+        android:layout_margin="@dimen/margin_16dp"
+        android:orientation="horizontal"
+        app:layout_constraintDimensionRatio="320:200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_shipping_address"
-        app:layout_constraintWidth_percent="0.80"
-        tools:itemCount="5"
-        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_card_shipping_address"
-        tools:orientation="vertical" />
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_purchase_done" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_add_new_address"
+    <TextView
+        android:id="@+id/tv_title_screen_add_new_payment"
+        style="@style/h_24_r_b_l_primary_no_ems"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_16dp"
         android:layout_marginTop="@dimen/margin_16dp"
-        android:background="@drawable/background_transparent_stroke"
-        app:layout_constraintDimensionRatio="150:39"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        android:text="@string/text_title_screen_add_new_payment"
+        app:layout_constraintHeight="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
-        app:layout_constraintWidth_percent="0.4">
+        app:layout_constraintTop_toBottomOf="@id/view_pager_bank_cards"
+        app:layout_constraintWidth="wrap_content" />
 
-        <TextView
-            android:id="@+id/tv_new_address"
-            style="@style/h_12_os_m_n_l_gray"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintHorizontal_bias="0.3"
-            android:text="@string/text_btn_add_new_address"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:src="@drawable/ic_add"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.5"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toEndOf="@id/tv_new_address"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_payment_methods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_screen_add_new_payment"
+        tools:itemCount="5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_payment_method"
+        tools:orientation="vertical" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_go_back"
@@ -86,9 +65,10 @@
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/margin_16dp"
         android:background="@drawable/ic_btn_not_pressed_radius"
+        android:elevation="@dimen/elevation_8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="133:48"
-        app:layout_constraintEnd_toStartOf="@id/btn_proceed_payment"
+        app:layout_constraintEnd_toStartOf="@id/btn_confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0.09"
         app:layout_constraintWidth_percent="0.35">
@@ -106,7 +86,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_proceed_payment"
+        android:id="@+id/btn_confirm"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/margin_16dp"
@@ -122,12 +102,23 @@
             style="@style/h_16_b_b_c_wh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_btn_proceed_payment"
+            android:text="@string/text_btn_confirm_payment"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -34,15 +35,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/text_title_confirmation"
-        tools:text="@string/place_holder_text_title_confirmation"
+        app:layout_constraintBottom_toBottomOf="@id/dg_modal_background"
+        app:layout_constraintEnd_toEndOf="@id/dg_modal_background"
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
+        app:layout_constraintTop_toTopOf="@id/dg_modal_background"
         app:layout_constraintVertical_bias="0.10"
         app:layout_constraintWidth="wrap_content"
-        app:layout_constraintHeight="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/dg_modal_background"
-        app:layout_constraintBottom_toBottomOf="@id/dg_modal_background"
-        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
-        app:layout_constraintEnd_toEndOf="@id/dg_modal_background"
-        />
+        tools:text="@string/place_holder_text_title_confirmation" />
 
     <TextView
         android:id="@+id/tv_subtitle_confirmation"
@@ -50,29 +50,29 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/text_subtitle_sign_up"
-        tools:text="@string/place_holder_text_subtitle_sign_up"
-        app:layout_constraintHeight="wrap_content"
-        app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintWidth_percent="0.64"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_confirmation"
         app:layout_constraintBottom_toBottomOf="@id/dg_modal_background"
-        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
         app:layout_constraintEnd_toEndOf="@id/dg_modal_background"
-        />
+        app:layout_constraintHeight="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_confirmation"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="0.70"
+        tools:text="@string/place_holder_text_subtitle_sign_up" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_cancel"
         style="@style/btn_selector.btn_relative_27_100_25_secondary"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_confirmation"
-        app:layout_constraintBottom_toBottomOf="@id/dg_modal_background"
-        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
-        app:layout_constraintEnd_toStartOf="@id/btn_accept"
-        app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_marginEnd="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/dg_modal_background"
+        app:layout_constraintEnd_toStartOf="@id/btn_login_accept"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/dg_modal_background"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_confirmation"
 
         >
+
         <TextView
             style="@style/h_16_r_b_l_wh_1"
             android:layout_width="wrap_content"
@@ -86,16 +86,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btn_accept"
+        android:id="@+id/btn_login_accept"
         style="@style/btn_selector.btn_relative_27_100_25_primary"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@id/btn_cancel"
-        app:layout_constraintBottom_toBottomOf="@id/btn_cancel"
-        app:layout_constraintStart_toEndOf="@id/btn_cancel"
-        app:layout_constraintEnd_toEndOf="@id/dg_modal_background"
         android:layout_marginStart="@dimen/_8dp"
-        >
+        app:layout_constraintBottom_toBottomOf="@id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="@id/dg_modal_background"
+        app:layout_constraintStart_toEndOf="@id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@id/btn_cancel">
 
         <TextView
             style="@style/h_16_r_b_l_wh_1"
